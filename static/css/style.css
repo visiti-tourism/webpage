@@ -1,0 +1,201 @@
+button::-moz-focus-inner 
+{
+  border: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+a: visited{
+	text-decoration: none;
+}
+button{
+	outline: 0;
+	text-align: center;
+	text-decoration: none;
+
+}
+/*----------------------------NAVIGATION MENU-------------------------------------------------*/
+.page-navigation{
+	height: 80px;
+    margin-top: 10px;
+    /*position: relative;*/
+}
+.page-navigation a {
+	/*display: block;*/
+	line-height: 4em;
+	color: #555555;
+	text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+	letter-spacing: -0.07px;
+	opacity: 1;
+	height: 24px;
+	margin-left: 25px;
+}
+.active_page{
+	border-bottom: 1px solid #707070;
+	opacity: 1;   
+	padding-bottom: 7px;
+}
+.active_page:hover{
+
+	border-bottom: 1px solid #FE862C;
+}
+.page-navigation  a:hover{
+	color: #FE862C;
+	text-decoration: none;
+	opacity: 1.0;
+}
+.button_signin{
+	background-color: transparent;
+	height: 36px;
+	width: 186px;
+	box-shadow: 0 5px 6px #00000029,
+				inset 0 3px 6px #00000029;
+	border: 2px solid #FE862C;
+	border-radius: 30px;
+	font-weight: 700;
+	font-size: 16px;
+	letter-spacing: 0;
+	color: #FE862C;
+	opacity: 1;
+	margin-top: 25px;
+}
+.button_signin:hover{
+	background-color: #FE862C;
+	color: white;
+	border-style: none;
+		box-shadow: inset 0 0px 0px #00000029,
+						  0 5px 6px #00000029;
+}
+/*------------------------------------------MAIN PART 1---------------------------------------*/
+.first_title{
+	position: relative;
+	font-size: 38px;
+	font-weight: 600;
+	text-align: left;
+	letter-spacing: 0;
+	color: #353535;
+	width: 373px;
+	margin-top: 100px;
+	margin-left: 25px;
+}
+.first_subtitle{
+	position: relative;
+	font-size: 21px;
+	font-weight: 300;
+	text-align: left;
+	letter-spacing: 0;
+	color: #747474;
+	width: 412px;
+	margin-left: 25px;
+}
+.button_learnmore{
+	background-color: transparent;
+	width: 162px;
+	height: 42px;
+	box-shadow: 0 5px 6px #00000029,
+				inset 0 3px 6px #00000029;
+	border: 2px solid #FE862C;
+	border-radius: 30px;
+	font-weight: 700;
+	font-size: 16px;
+	letter-spacing: 0;
+	color: #FE862C;
+	opacity: 1;
+	margin-left: 25px;
+	margin-right: 45px;
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+.button_learnmore:hover{
+	background-color: #FE862C;
+	color: white;
+	border-style: none;
+		box-shadow: inset 0 0px 0px #00000029,
+						  0 5px 6px #00000029;
+}
+.button_signup{
+	background-color: transparent;
+	width: 162px;
+	height: 42px;
+	background: transparent linear-gradient(180deg, #78CEE2 0%, #01968B 100%) 0% 0% no-repeat padding-box;
+	box-shadow: 0 5px 6px #00000029,
+			inset 0 3px 6px #00000029;
+	border-radius: 30px;
+	opacity: 1;
+	font-weight: 700;
+	font-size: 16px;
+	letter-spacing: 0;
+	color: #FFFFFF;
+	border-style: none;
+	margin-top: 25px;
+	margin-bottom: 100px;
+}
+.button_signup:hover{
+	background:none;
+	background-color: white;
+	border: 2px solid #01968B;
+	color: #01968B;
+	box-shadow: inset 0 0px 0px #00000029,
+				  0 5px 6px #00000029;
+
+}
+
+.Number_1{
+	margin-top: 375px;
+}
+.style_of_text_numbers{
+	font-size: 21px;
+	font-weight: 300;
+	text-align: left;
+	letter-spacing: 0;
+	color: #747474;
+}
+.Number_1_text{
+	margin-top: 440px;
+}
+.Number_2_text{
+	margin-left: 24px;
+	margin-top: 0px;
+}
+.Number_3_text{
+	margin-top: 75px;
+}
+.Number_4_text{
+	margin-top: 135px;
+}
+.Number_4{
+	margin-top: 50px;
+}
+
+.Download_text_1{
+	font-weight: 300;
+	font-size: 35px;
+	letter-spacing: 0.45px;
+	color: #606060;
+	opacity: 1;
+	margin-bottom: 0px;
+	margin-top: 325px;
+}
+.Download_text_2{
+	font-weight: 300;
+	font-size: 24px;
+	letter-spacing: -0.1px;
+	color: #606060;
+	margin-top: 0px;
+}
+.download_buttons{
+    border: none;
+    background: none;
+    margin-top: 100px;
+}
+.download_buttons_img{
+	width: 186px;
+}
