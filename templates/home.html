@@ -1,17 +1,47 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="en">
 	<head>
 		<title>Visiti</title>
 		<meta charset="UTF-8">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-		<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" media="all">
-		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-		<link rel="stylesheet" type="text/css" href="{% static 'css/media.css' %}" media="all">
-		<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}" media="all">
+		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css" media="all">
+		<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/media.css" media="all">
+		<link rel="stylesheet" type="text/css" href="../static/css/animate.css" media="all">
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+
+
+				<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#loginLink").click(function( event ){
+           event.preventDefault();
+           $(".overlay").fadeToggle("fast");
+     });
+
+    $(".overlayLink").click(function(event){
+        event.preventDefault();
+        var action = $(this).attr('data-action');
+
+        $("#loginTarget").load(action);
+
+        $(".overlay").fadeToggle("fast");
+    });
+
+    $(".close").click(function(){
+        $(".overlay").fadeToggle("fast");
+    });
+
+    $(document).keyup(function(e) {
+        if(e.keyCode == 27 && $(".overlay").css("display") != "none" ) { 
+            event.preventDefault();
+            $(".overlay").fadeToggle("fast");
+        }
+    });
+});
+</script>
 	</head>
 	<body>
 		<!--<img src="../static/images/bc.png" style="position: absolute;">
@@ -29,21 +59,43 @@
 							<div class="row">
 								<div class="col-sm-3"></div>
 								<div class="col-sm-2">
-									<a href="home" class="active_page">Home</a>
+									<a href="home.html" class="active_page">Home</a>
 								</div>
 
 								<div class="col-sm-2">
-									<a href="uploadtour">Add Tour</a>
+									<a href="uploadtour.html">Add Tour</a>
 								</div>
 
 
 								
 								<div class="col-sm-2">
-									<a href="app">App</a>
+									<a href="#app">App</a>
 								</div>
 
 								<div class="col-sm-3">
-									<button class="button_signin" onclick="location.href='#signin">Sign in</button>
+									<form method="post">
+										<input type="button" href="login.php" class="overlayLink button_signin" data-action="login-form.html" value="Sign in">
+									</form>
+    						<div class="overlay" style="display: none; margin-top: 250px;">
+							    <div class="login-wrapper">
+							        <div class="login-content" id="loginTarget">
+										<h3>Sign in</h3>
+										<form method="post" action="login.php">
+										    <label for="username">
+										        Username:
+										        <input type="text" name="username" id="username" placeholder="Username must be between 8 and 20 characters" pattern="^[a-zA-Z][a-zA-Z0-9-_.]{8,20}$" required />
+										    </label>
+										    <label for="password">
+										        Password:
+										        <input type="password" name="password" id="password" placeholder="Password must contain 1 uppercase, lowercase and number" pattern="(?=^.{8,}$)((?=.*d)|(?=.*W+))(?![.n])(?=.*[A-Z])(?=.*[a-z]).*$" required />
+										    </label>
+										    <button type="submit">Sign in</button>
+										</form>
+									</div>
+								</div>
+						</div>
+
+
 								</div>
 							</div>
 						</div>
@@ -64,7 +116,7 @@
 
 							<div class="main-buttons">
 								<button class="button_learnmore">Learn more</button>
-								<button class="button_signup">Sign in</button>
+								<button class="button_signup">Sign up</button>
 							</div>
 						</div>
 						<div class="col-sm-6"></div>
@@ -134,7 +186,7 @@
 			</div>
 
 
-			<div class="container-fluid">
+			<div class="container-fluid" id="app">
 				<div class="row">
 					<div class="col-sm-2"></div>
 					<div class="col-sm-4">
@@ -171,8 +223,6 @@
 	<script src="../static/js/wow.min.js"></script>
 	<script>
     	new WOW().init();
-	</script>
-	   <script type="text/javascript">
 		    (function($){
 		    $.fn.extend({ 
 		        rotaterator: function(options) {
