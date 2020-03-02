@@ -43,9 +43,9 @@ $(document).ready(function() {
 		
 	</head>
 	<body>
-
-		<!--NAVIGATION MENU-->
 		<picture><img src="../static/images/AddImage.png" style="object-fit: cover; width: 100%; position: absolute;"></picture>
+		<!--NAVIGATION MENU-->
+		
 		<div class="container-fluid">
 			<div class="row">
 					<nav class="page-navigation">
@@ -61,13 +61,13 @@ $(document).ready(function() {
 								</div>
 
 								<div class="col-sm-2">
-									<a href="uploadtour.html"class="active_page">Add Tour</a>
+									<a href="uploadtour.html" class="active_page">Add Tour</a>
 								</div>
 
 
 								
 								<div class="col-sm-2">
-									<a href="home.html">App</a>
+									<a href="home.html#app">App</a>
 								</div>
 
 								<div class="col-sm-3">
@@ -140,6 +140,7 @@ $(document).ready(function() {
 
 
 						<input type="submit" value="Submit" class="button_submit_add_tour">
+                        {%csrf_token%}
 						<h3 class="text_under_button">You will be able to edit this information</h3>
 					</form>
 				</div>

@@ -1,4 +1,4 @@
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, render
 
 
 def index(request):
@@ -6,7 +6,7 @@ def index(request):
 
 
 def uploadtour(request):
-    return render_to_response('uploadtour.html')
+    return render(request, 'uploadtour.html')
 
 
 def app(request):

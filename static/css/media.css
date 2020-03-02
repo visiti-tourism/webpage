@@ -1,517 +1,225 @@
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 400px) {
-
-
-/*--------------------------------------Main_Part--------------------------------------------------------*/
-
-
-	#particles-js{
-		height:95%;
-	}
-
-	.mobile_main_page{
-		height: 100%;
-	}
-
-	nav {
-		display: none;	
-	}
-
-	.main_img{
+@media only screen
+and (min-width : 240px) 
+ and (max-width : 400px){
+	nav{
 		display: none;
 	}
-
-	.text_box_top{
-		align-content: center;
-		margin-top: 0%;
-		width:100%;
-		margin-left: 0px;
-	}
-
-	.text_box_top h1 {
-	    text-align: left;
-	    font-size: 84px;
-	    margin-bottom: 20%;
-	    margin-left: 0%;
-	    margin-top: 10%;
-	    width: 290px;
-	    display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-
-	.text_box_top h2{
-		font-size: 18px;
-		width: 285px;
-		margin-top: 0px;
-		margin-left: 0%;
-		margin-bottom: 18%;
-		display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-
-	.laptop_button{
+	.main_background{
 		display: none;
 	}
-
-	.button{
+	.mobile_background{
 		width: 100%;
-		font-size: 17px;
-		margin: 0px;
-		margin-bottom: 50%;
-		height: 40%;
 	}
-
-	.button1{
-		height: 40px;
-		width:  135px;
-		margin-right: 14%
+	.mobile_homeImage{
+		width: 60%;
+		margin-top: 22%;
+		margin-left: 3%;
 	}
-
-		.button2{
-		height: 40px;
-		width: 110px;
-	}
-
-
-	/*----------------------------------------------------About------------------------------------------------------------------*/
-
-
-	.name_of_section{
-		font-size: 25px;
-		color: #00d4af;
-		margin: 0px;
-		margin-top: 8%;
-	    margin-bottom: 10%;
-	}
-
-	.aboutsmobile_img{
-		width:80%;
-		display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-
-	.about_right{
-		margin: 0px;
-		width: 95%;
-		margin-left: 5%;
-	}
-
-	.about_h1{
+	.first_title{
+		text-align: right;
 		font-size: 30px;
-		margin: 0px;
+		width: 320px;
+		font-weight: 400;
+		margin: 0;
+		margin-right: 5px;
+	}
+
+	.first_subtitle{
+    text-align: right;
+    font-size: 17px;
+    width: 200px;
+    margin-left: 120px;
+    font-weight: 100;
+	}
+	.main-buttons{
+		display: none;
+	}
+	.homePage{
+		display: none;
+	}
+
+
+
+	.Number_1{
 		width: 95%;
-		height: 40px;
-		margin-top: 5%;
-	}
+		margin-top: 20%;
 
-	.about_right p{
-		font-size: 15px;
 	}
-
-	.buttonCV{
-		width: 140px;
-		height: 40px;
+	.Number_1_text{
 		font-size: 14px;
-		margin: 0px;
-		margin-left: 44%;
-		margin-top: 5%;
-	}
-
-	.about_left{
-		width:93%;
-		margin: 0px;
-		margin-left: 7%;
-		margin-top: 15%;
-		margin-bottom: 15%;
-	}
-
-	#myProgress {
-		margin-bottom: 10%;
-	  	width: 94%;
-	}
-
-	.about_left p{
-		font-size: 17px;
-		width: 94%;
-		margin-bottom: 15px;
-		margin-top: 5%;
+		width: 100%;
+		margin-top: 40%;
 
 	}
 
-	#myBar {
-	  height: 5px;
+	.Number_2{
+		width: 60%;
+		margin-top: 12%;
+		margin-left: 30%;
+	}
+	.Number_2_text{
+		font-size: 14px;
+		width: 82%;
+		margin-left: 0;
+		text-align: left;
+		margin-left: 15%;
+
 	}
 
-	.hobby{
-		width: 10%;
-		height: 10%;
-		margin: 0px;
+	.Number_3{
+		width: 75%;
+		margin-top: 55%;
+	}
+	.Number_3_text{
+    font-size: 14px;
+    width: 124px;
+    margin-left: 0;
+    margin-top: 30%;
+
+	}
+	.Number_4{
+		width: 75%;
+		margin-top: 35%;
 		margin-left: 10%;
-		margin-top: 5%;
-	}
-
-
-	/*-----------------------------------------------------Contact------------------------------------------------------------*/
-
-
-	form {
-	    margin: 0px;
-	    display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-
-	textarea{
-		border: none;
-	    font-size: 15px;
-	    border-bottom: 1px solid #9d9d9d;
-	    width: 89%;
-	    height: 225px;
-	    margin-top: 10%;
-	    outline: none;
-	    margin-left: 6%;
-	}
-
-	input{
-		border:none;
-		border-bottom: 1px solid #9d9d9d;
-		width: 93%;
-		height:50px;
-		font-size: 15px;
-		padding-bottom: 15px;
-		outline: none;
 
 	}
-
-	.input_name{
-		margin: 0px;
-				margin-left: 4%;
-		margin-bottom: 2%;
-		margin-top: 5%;
-	}
-
-	.form-inline{
-	    display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	    width: 95%;
-	}
-
-	.button_cont{
-		height:40px;
-		width: 100px;
-		font-size: 14px; 
-		margin-top: 5%;
-		margin-left: 65%;
-	}
-
-	.button_cont1{
-		width: 95%;
-		display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-
-	.contact_name{
-		width: 90%;
-		height: 175px;
-		margin: 0px;
-		margin-left: 5%;
-	}
-
-	.contact_name h1{
-		font-size: 30px;
-		margin: 0px;
-		margin-top: 5%;
-		height: 45px;
-	}
-
-	.contact_name p{
+	.Number_4_text{
 		font-size: 14px;
-		margin-top: 5%;
-	}
-
-	.contact_name span{
-		font-size: 17px;
-	}
-
-	.social_about{
-		display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	    margin-bottom: 25px;
-	    width: 285px;
+		width: 82%;
+		margin-left: 15%;
+		margin-top: 55%;
 
 	}
+	.Download_text_1{
+		margin: 0;
+		margin-top: 30%;
+		font-size: 30px;
+	}
+	.Download_text_2{
+		font-size: 20px;
+	}
+	.download_buttons_img{
+		width: 60%;
+		margin-top: 0;
+	}
+	.download_buttons{
+		margin-top: 10%;
+		margin-bottom: 10%;
 
-	.social {
-    margin-left: -16px;
-    width: 18px;
-}
+	}
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 401px) 
 and (max-width : 480px){
-
-
-/*--------------------------------------Main_Part--------------------------------------------------------*/
-
-
-	#particles-js{
-		height:100%;
-	}
-
-	.mobile_main_page{
-		height: 100%;
-	}
-
-	nav {
-		display: none;	
-	}
-
-	.main_img{
+	nav{
 		display: none;
 	}
-
-	.text_box_top{
-		align-content: center;
-		margin-top: 0%;
-		width:100%;
-		margin-left: 0px;
-	}
-
-	.text_box_top h1 {
-		text-align: left;
-	    font-size: 100px;
-	    margin-bottom: 20%;
-	    margin-left: 0%;
-	    margin-top: 17%;
-	    width: 350px;
-	    display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-
-	.text_box_top h2{
-	    font-size: 20px;
-	    width: 305px;
-	    margin-top: 0px;
-	    margin-bottom: 20%;
-		display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-
-	.laptop_button{
+	.main_background{
 		display: none;
 	}
-
-	.button{
+	.mobile_background{
 		width: 100%;
-		font-size: 19px;
-		margin: 0px;
-		margin-bottom: 10%;
+	}
+	.mobile_homeImage{
+		width: 60%;
+		margin-top: 22%;
+		margin-left: 3%;
+	}
+	.first_title{
+		text-align: right;
+		font-size: 28px;
+		width: 70%;
+		font-weight: 400;
+		margin: 0;
+		margin-left: 25%;
+		margin-right: 0;
 	}
 
-	.button1{
-	    height: 45px;
-    	width: 150px;
-		margin-right: 14%;
-	}
-
-		.button2{
-		height: 45px;
-		width: 130px;
-	}
-
-
-	/*----------------------------------------------------About------------------------------------------------------------------*/
-
-
-	.name_of_section{
-		font-size: 32px;
-		color: #00d4af;
-		margin: 0px;
-		margin-top: 8%;
-	    margin-bottom: 10%;
-	}
-
-	.aboutsmobile_img{
-		width: 80%;
-	    display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-
-	.about_right{
-		margin: 0px;
-		width: 340px;
-		margin-left: 6%;
-		display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-
-	.about_h1{
-		font-size: 40px;
-	    margin: 0px;
-	    width: 340px;
-	    height: 59px;
-	    margin-top: 40px;
-	}
-
-	.about_right p{
-		font-size: 19px;
-	}
-
-	.buttonCV{
-	    width: 150px;
-	    height: 45px;
-	    font-size: 17px;
-	    margin: 0px;
-	    margin-left: 190px;
-	    margin-top: 7%;
-	}
-
-	.about_left{
-		width: 340px;
-		margin: 0px;
-		margin-top: 15%;
-		margin-bottom: 15%;
-		display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-
-	#myProgress {
-		margin-bottom: 10%;
-	  	width: 340px;
-	}
-
-	.about_left p{
-		font-size: 22px;
-		width: 340px;
-		margin-bottom: 15px;
-		margin-top: 5%;
-
-	}
-
-	#myBar {
-	  height: 5px;
-	}
-
-	.hobby{
-
-		margin: 0px;
-		margin-left: 10%;
-    	margin-top: 8%;
-	}
-
-
-	/*-----------------------------------------------------Contact------------------------------------------------------------*/
-	form {
-	    margin: 0px;
-	}
-
-	textarea{
-	    font-size: 18px;
-	    width: 340px;
-	    height: 250px;
-	    margin-top: 45px;
-	    margin-left: 5%;
-	    display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-
-	input{
-		border:none;
-		border-bottom: 1px solid #9d9d9d;
-		width: 340px;
-		height:65px;
+	.first_subtitle{
+		text-align: right;
 		font-size: 18px;
-		padding-bottom: 15px;
-		outline: none;
-		margin-left: 5%;
-		margin-bottom: 2%;
+		width: 55%;
+		font-weight: 100;
+		margin-left: 40%;
+		margin-right: 0;
+	}
+	.main-buttons{
+		display: none;
+	}
+	.homePage{
+		display: none;
 	}
 
-	.input_name{
-		margin: 0px;
-		margin-top: 8%;
-		margin-left: 7px;
+
+
+	.Number_1{
+		width: 90%;
+		margin-top: 20%;
+
+	}
+	.Number_1_text{
+		font-size: 15px;
+		width: 100%;
+		margin-top: 40%;
+
 	}
 
-	.form-inline{
-	    display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	    width: 350px;
-	}
-
-	.button_cont{
-		height: 45px;
-	    width: 125px;
-	    font-size: 17px;
-	    margin-top: 6%;
-	    margin-left: 215px;
-	}
-
-	.button_cont1{
-		width: 340px;
-		display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-
-	.contact_name{
-    width: 340px;
-    height: 285px;
-    margin: 0px;
-    margin-left: 8%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-	}
-
-	.contact_name h1{
-	font-size: 40px;
-    margin: 0px;
-    margin-top: 15%;
-    height: 60px;
-	}
-
-	.contact_name p{
-		font-size: 20px;
+	.Number_2{
+		width: 70%;
 		margin-top: 10%;
+		margin-left: 30%;
 	}
-
-	.contact_name span{
-		font-size: 17px;
-	}
-	.sociale{
-		width: 340px;
-		display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	    margin-bottom: 25px;
-	}
-	.social_about{
-
-	    
+	.Number_2_text{
+		font-size: 15px;
+		width: 82%;
+		margin-left: 0;
+		text-align: left;
+		margin-left: 15%;
 
 	}
 
-	.social{
-		margin-left: -5px;
-		width: 18px;
+	.Number_3{
+		width: 85%;
+		margin-top: 35%;
+	}
+	.Number_3_text{
+		font-size: 15px;
+		width: 82%;
+		margin-left: 0;
+		margin-top: 30%;
+
+	}
+	.Number_4{
+		width: 85%;
+		margin-top: 30%;
+		margin-left: 10%;
+
+	}
+	.Number_4_text{
+		font-size: 15px;
+		width: 82%;
+		margin-left: 15%;
+		margin-top: 55%;
+
+	}
+	.Download_text_1{
+		margin: 0;
+		margin-top: 30%;
+		font-size: 30px;
+	}
+	.Download_text_2{
+		font-size: 20px;
+	}
+	.download_buttons_img{
+		width: 60%;
+		margin-top: 0;
+	}
+	.download_buttons{
+		margin-top: 10%;
+		margin-bottom: 10%;
 	}
 }
 
@@ -520,259 +228,111 @@ and (max-width : 480px){
 @media only screen
 and (min-width: 481px)
 and (max-width: 767px){
-
-
-/*--------------------------------------Main_Part--------------------------------------------------------*/
-
-
-	#particles-js{
-		height:100%;
-	}
-
-	.mobile_main_page{
-		height: 100%;
-	}
-
-	nav {
-		display: none;	
-	}
-
-	.main_img{
+	nav{
 		display: none;
 	}
-
-	.text_box_top{
-		align-content: center;
-		margin-top: 0%;
-		width:100%;
-		margin-left: 0px;
-	}
-
-	.text_box_top h1 {
-		text-align: left;
-	    font-size: 130px;
-	    margin-bottom: 17%;
-	    margin-left: 0%;
-	    margin-top: 8%;
-	    width: 440px;
-	    display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-
-	.text_box_top h2{
-		font-size: 28px;
-    	width: 440px;
-    	margin-top: 0px;
-    	margin-bottom: 17%;
-    	display: block;
-    	margin-left: auto;
-    	margin-right: auto;
-	}
-
-	.laptop_button{
+	.main_background{
 		display: none;
 	}
-
-	.button{
+	.mobile_background{
 		width: 100%;
+	}
+	.mobile_homeImage{
+		width: 60%;
+		margin-top: 22%;
+		margin-left: 3%;
+	}
+	.first_title{
+		text-align: right;
 		font-size: 25px;
-		margin: 0px;
-		margin-bottom: 10%;
+		width: 70%;
+		font-weight: 400;
+		margin: 0;
+		margin-left: 8%;
 	}
 
-	.button1{
-        height: 55px;
-		width: 185px;
-		margin-right: 14%;
+	.first_subtitle{
+		text-align: right;
+		font-size: 15px;
+		width: 55%;
+		font-weight: 100;
+		margin-left: 22%;
+	}
+	.main-buttons{
+		display: none;
+	}
+	.homePage{
+		display: none;
 	}
 
-		.button2{
-		height: 55px;
-		width: 160px;
-	}
 
 
-	/*----------------------------------------------------About------------------------------------------------------------------*/
-
-
-	.name_of_section{
-		font-size: 40px;
-		color: #00d4af;
-		margin: 0px;
-		margin-top: 8%;
-	    margin-bottom: 10%;
-	}
-
-	.aboutsmobile_img{
+	.Number_1{
 		width: 80%;
-	    display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
+		margin-top: 20%;
 
-	.about_right{
-		margin: 0px;
-		width: 380px;
-		margin-left: 6%;
-		display: block;
-	    margin-left: auto;
-	    margin-right: auto;
 	}
-
-	.about_h1{
-		font-size: 45px;
-	    margin: 0px;
-	    width: 380px;
-	    height: 65px;
-	    margin-top: 40px;
-	}
-
-	.about_right p{
-		font-size: 22px;
-	}
-
-	.buttonCV{
-	    width: 190px;
-	    height: 55px;
-	    font-size: 20px;
-	    margin: 0px;
-	    margin-left: 190px;
-	    margin-top: 7%;
-	}
-
-	.about_left{
-		width: 380px;
-		margin: 0px;
-		margin-top: 15%;
-		margin-bottom: 15%;
-		display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-
-	#myProgress {
-		margin-bottom: 10%;
-	  	width: 380px;
-	}
-
-	.about_left p{
-		font-size: 25px;
-		width: 380px;
-		margin-bottom: 15px;
-		margin-top: 5%;
+	.Number_1_text{
+		font-size: 12px;
+		width: 100%;
+		margin-top: 40%;
 
 	}
 
-	#myBar {
-	  height: 5px;
-	}
-
-	.hobby{
-
-		margin: 0px;
-		margin-left: 11%;
-    	margin-top: 8%;
-	}
-
-
-	/*-----------------------------------------------------Contact------------------------------------------------------------*/
-	form {
-	    margin: 0px;
-	}
-
-	textarea{
-	    font-size: 22px;
-	    width: 380px;
-	    height: 275px;
-	    margin-top: 45px;
-	    margin-left: 5%;
-	    display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-
-	input{
-		border:none;
-		border-bottom: 1px solid #9d9d9d;
-		width: 380px;
-		height:70px;
-		font-size: 22px;
-		padding-bottom: 15px;
-		outline: none;
-		margin-left: 5%;
-		margin-bottom: 2%;
-	}
-
-	.input_name{
-		margin: 0px;
-		margin-top: 8%;
-		margin-left: 7px;
-	}
-
-	.form-inline{
-	    display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	    width: 380px;
-	}
-
-	.button_cont{
-		height: 55px;
-	    width: 145px;
-	    font-size: 20px;
-	    margin-top: 6%;
-	    margin-left: 235px;
-	}
-
-	.button_cont1{
-		width: 380px;
-		display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-
-	.contact_name{
-    width: 380px;
-    height: 305px;
-    margin: 0px;
-    margin-left: 8%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-	}
-
-	.contact_name h1{
-	font-size: 40px;
-    margin: 0px;
-    margin-top: 15%;
-    height: 60px;
-	}
-
-	.contact_name p{
-		font-size: 23px;
+	.Number_2{
+		width: 60%;
 		margin-top: 10%;
+		margin-left: 30%;
 	}
-
-	.contact_name span{
-		font-size: 23px;
-	}
-	.sociale{
-		width: 380px;
-		display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	    margin-bottom: 35px;
-	}
-	.social_about{
-
-	    
+	.Number_2_text{
+		font-size: 12px;
+		width: 82%;
+		margin-left: 0;
+		text-align: left;
+		margin-left: 15%;
 
 	}
 
-	.social{
-		margin-left: 3px;
-		width: 18px;
+	.Number_3{
+		width: 75%;
+		margin-top: 35%;
+	}
+	.Number_3_text{
+		font-size: 12px;
+		width: 82%;
+		margin-left: 0;
+		margin-top: 30%;
+
+	}
+	.Number_4{
+		width: 75%;
+		margin-top: 30%;
+		margin-left: 10%;
+
+	}
+	.Number_4_text{
+		font-size: 12px;
+		width: 82%;
+		margin-left: 15%;
+		margin-top: 55%;
+
+	}
+	.Download_text_1{
+		margin: 0;
+		margin-top: 30%;
+		font-size: 30px;
+	}
+	.Download_text_2{
+		font-size: 20px;
+	}
+	.download_buttons_img{
+		width: 60%;
+		margin-top: 0;
+	}
+	.download_buttons{
+		margin-top: 10%;
+		margin-bottom: 10%;
+		margin-right: 10%;
 	}
 }
 
@@ -790,47 +350,23 @@ and (max-width : 1023px) {
 }
 
 
-
-
-
-
-
-
-
-
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-width : 768px) 
-and (max-width : 1024px) 
-and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-width : 768px) 
-and (max-width : 1024px) 
-and (orientation : portrait) {
-
-
-
-}
-
 /* Desktops and laptops ----------- */
 @media only screen 
-and (min-width : 1025px) {
+and (min-width : 1024px) {
+	.hamburder_menu{
+	display: none;
+	}
+	.mobile_background{
+		display: none;
+	}
+	.mobile_homeImage{
+		display: none;		
+	}
 
 }
 
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
-/* Styles */
-}
-
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
 }

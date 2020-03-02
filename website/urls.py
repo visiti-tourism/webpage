@@ -16,12 +16,24 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
+from myapi import views as v
+from django.urls import include
+from rest_framework import routers
 
+router = routers.DefaultRouter()
+router.register(r'users', v.UserViewSet)
+router.register(r'groups', v.GroupViewSet)
 
+# Wire up our API using automatic URL routing.
+# Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('uploadtour', views.uploadtour, name='uploadtour'),
-    path('app', views.app, name='app'),
-    path('signin', views.signin, name='signin')
+    path('home.html', views.index, name='index'),
+    path('uploadtour.html', views.uploadtour, name='uploadtour'),
+    path('home.html#app', views.app, name='app'),
+    path('signin', views.signin, name='signin'),
+    path('', include(router.urls)),
+    path('api-auth/',
+         include('rest_framework.urls', namespace='rest_framework'))
 ]

@@ -3,6 +3,7 @@
 	<head>
 		<title>Visiti</title>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css" media="all">
@@ -12,47 +13,22 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
 
-
-				<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script>
-$(document).ready(function() {
-    $("#loginLink").click(function( event ){
-           event.preventDefault();
-           $(".overlay").fadeToggle("fast");
-     });
-
-    $(".overlayLink").click(function(event){
-        event.preventDefault();
-        var action = $(this).attr('data-action');
-
-        $("#loginTarget").load(action);
-
-        $(".overlay").fadeToggle("fast");
-    });
-
-    $(".close").click(function(){
-        $(".overlay").fadeToggle("fast");
-    });
-
-    $(document).keyup(function(e) {
-        if(e.keyCode == 27 && $(".overlay").css("display") != "none" ) { 
-            event.preventDefault();
-            $(".overlay").fadeToggle("fast");
-        }
-    });
-});
-</script>
 	</head>
 	<body>
-		<!--<img src="../static/images/bc.png" style="position: absolute;">
-		NAVIGATION MENU-->
-		<picture><img src="../static/images/firstImage.png" class="wow animated fadeInRight" style="object-fit: cover; width: 100%; position: absolute;"></picture>
+		<!--NAVIGATION MENU-->
+		<picture><img src="../static/images/background-laptop.png" class="main_background"></picture>
+
+
+		<picture><img src="../static/images/mobile_background.png" class="mobile_background"></picture>
+
+			
+
 		<div class="container-fluid">
 			<div class="row">
 				
-					<nav class="page-navigation wow animated fadeInDown">
+					<nav class="page-navigation wow animated fadeInDown" id="page-navigation">
 						<div class="col-sm-2">
-							<h1 style="color: orange; margin-top: 26px; margin-left: 50px;">VisitiLOGO</h1>
+
 						</div>
 							
 						<div class="col-sm-10">
@@ -73,29 +49,9 @@ $(document).ready(function() {
 								</div>
 
 								<div class="col-sm-3">
-									<form method="post">
-										<input type="button" href="login.php" class="overlayLink button_signin" data-action="login-form.html" value="Sign in">
-									</form>
-    						<div class="overlay" style="display: none; margin-top: 250px;">
-							    <div class="login-wrapper">
-							        <div class="login-content" id="loginTarget">
-										<h3>Sign in</h3>
-										<form method="post" action="login.php">
-										    <label for="username">
-										        Username:
-										        <input type="text" name="username" id="username" placeholder="Username must be between 8 and 20 characters" pattern="^[a-zA-Z][a-zA-Z0-9-_.]{8,20}$" required />
-										    </label>
-										    <label for="password">
-										        Password:
-										        <input type="password" name="password" id="password" placeholder="Password must contain 1 uppercase, lowercase and number" pattern="(?=^.{8,}$)((?=.*d)|(?=.*W+))(?![.n])(?=.*[A-Z])(?=.*[a-z]).*$" required />
-										    </label>
-										    <button type="submit">Sign in</button>
-										</form>
-									</div>
-								</div>
-						</div>
-
-
+									
+										<button class="button_signin">Sign in</button>
+									
 								</div>
 							</div>
 						</div>
@@ -104,22 +60,41 @@ $(document).ready(function() {
 			</div>
 		</div>
 
-		<!--------------------------------------------MAIN PART 1---------------------------------------------->
-		<main>
-					<picture class="wow animated fadeInLeft"><img src="../static/images/bc.png" style="object-fit: cover; width: 100%; position: absolute; margin-top:680px;"></picture>
+
+
+<!------
+		<div class="hamburger-menu">
+		  <input id="menu__toggle" type="checkbox" />
+		  <label class="menu__btn" for="menu__toggle">
+		    <span></span>
+		  </label>
+		  <ul class="menu__box">
+		    <li class="menu__items"><a href="#">Sign up</a> | <a href="#">Sign in</a></li>
+		    <li><a class="menu__item" href="#">Home</a></li>
+		    <li><a class="menu__item" href="#">Add tour</a></li>
+		    <li><a class="menu__item" href="#">App</a></li>
+		  </ul>
+		</div>
+
+		-----------------------------------------MAIN PART 1---------------------------------------------->
+			<main>
 			<div class="container-fluid">
 				<div class="row">
 						<div class="col-sm-1"></div>
-						<div class="col-sm-5 wow animated fadeInDown">
+						<div class="col-xs-12 col-md-6 col-md-push-5">
+							<img src="../static/images/homePage.png" class="homePage">
+							<img src="../static/images/mobile_homePage.png" class="mobile_homeImage">
+						</div>
+						<div class=" col-xs-12 col-md-5 col-md-pull-6 wow animated fadeInDown">
 							<h1 class="first_title">Grow your business with Visiti</h1>
-							<h2 class="first_subtitle">Fill up your guided proups in there easy steps</h2>
+							<h2 class="first_subtitle">Fill up your guided groups in there easy steps</h2>
 
 							<div class="main-buttons">
 								<button class="button_learnmore">Learn more</button>
 								<button class="button_signup">Sign up</button>
 							</div>
 						</div>
-						<div class="col-sm-6"></div>
+
 
 
 					</div>
@@ -130,26 +105,27 @@ $(document).ready(function() {
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-1"></div>
-					<div class="col-sm-2">	
-						<img src="../static/images/Number_1.png" class="Number_1">
+					<div class="col-sm-2 col-xs-5">	
+						<img src="../static/images/Number_1.png" class="Number_1  wow animated fadeInLeft">
+
 					</div>
 
-					<div class="col-sm-2">
-						<h2 class="Number_1_text style_of_text_numbers">You sign up on our website</h2>
-						<!--<button class="button_signup">Sign in</button>-->
+					<div class="col-sm-2 col-xs-5">
+						<h2 class="Number_1_text style_of_text_numbers wow animated fadeInLeft">You sign up on our website</h2>
+
 					</div>
-						<div class="col-sm-7"></div>
+						<div class="col-sm-7 col-xs-2"></div>
 					
 				</div>
 			</div>
 
-
+			
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-7"></div>
-					<div class="col-sm-4">	
-						<img src="../static/images/Number_2.png" class="Number_2">
-						<h2 class="Number_2_text style_of_text_numbers">We check your information<br/> and give you access to upload proposals</h2>
+					<div class="col-sm-4 col-xs-12">	
+						<img src="../static/images/Number_2.png" class="Number_2  wow animated fadeInRight">
+						<h2 class="Number_2_text style_of_text_numbers wow animated fadeInRight">We check your information<br/> and give you access to upload proposals</h2>
 					</div>
 						<div class="col-sm-1"></div>
 					
@@ -159,14 +135,14 @@ $(document).ready(function() {
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-1"></div>
-					<div class="col-sm-2">	
-						<img src="../static/images/Number_3.png" class="Number_3">
+					<div class="col-sm-2 col-xs-5">	
+						<img src="../static/images/Number_3.png" class="Number_3  wow animated fadeInLeft">
 					</div>
 
-					<div class="col-sm-3">
-						<h2 class="Number_3_text style_of_text_numbers">You sign in and fill up the form to add a tour. You will be able to edit the information and see the statistics after submitting the form</h2>
+					<div class="col-sm-3 col-xs-5">
+						<h2 class="Number_3_text style_of_text_numbers wow animated fadeInRight">You sign in and fill up the form to add a tour. You will be able to edit the information and see the statistics after submitting the form</h2>
 					</div>
-						<div class="col-sm-6"></div>
+						<div class="col-sm-6 col-xs-2"></div>
 					
 				</div>
 			</div>
@@ -174,11 +150,11 @@ $(document).ready(function() {
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-6"></div>
-					<div class="col-sm-2">
-						<h2 class="Number_4_text style_of_text_numbers">Users choose and book tours</h2>
+					<div class="col-sm-2 col-xs-5" >
+						<h2 class="Number_4_text style_of_text_numbers wow animated fadeInRight">Users choose and book tours</h2>
 					</div>
-					<div class="col-sm-4">	
-						<img src="../static/images/Number_4.png" class="Number_4">
+					<div class="col-sm-4 col-xs-5">	
+						<img src="../static/images/Number_4.png" class="Number_4  wow animated fadeInRight">
 					</div>
 						<div class="col-sm-1"></div>
 					
@@ -186,7 +162,7 @@ $(document).ready(function() {
 			</div>
 
 
-			<div class="container-fluid" id="app">
+			<div class="container-fluid wow animated fadeInUp" id="app">
 				<div class="row">
 					<div class="col-sm-2"></div>
 					<div class="col-sm-4">
@@ -201,17 +177,17 @@ $(document).ready(function() {
 				</div>
 			</div>
 
-			<div class="container-fluid">
+			<div class="container-fluid wow animated fadeInUp">
 				<div class="row">
 
 					<div class="col-sm-4"></div>
-					<div class="col-sm-2">
-						<button type="button" class="download_buttons"><img class="download_buttons_img" src="../static/images/Google_button.png"></button>
-					</div>
+					<div class="col-sm-2 col-xs-12">
+						    <button type="button" class="download_buttons" onclick="window.location.href = 'https://docs.google.com/uc?export=download&id=1krn1fDAlOhspFY5nSa-f_lb2LLNhwCD6';"><img class="download_buttons_img" src="../static/images/Google_button.png"></button>
+                    </div>
 
 					
-					<div class="col-sm-2">
-						<button type="button" class="download_buttons"><img class="download_buttons_img" src="../static/images/Apple_button.png"></button>
+					<div class="col-sm-2 col-xs-12">
+						<button type="button" class="download_buttons"><img class="download_buttons_img" src="../static/images/Apple_button1.png"></button>
 					</div>	
 					<div class="col-sm-4"></div>
 					
@@ -255,24 +231,6 @@ $(document).ready(function() {
 		            });
 		        }
 		    });
-		})(jQuery);
-
-		 $(document).ready(function() {
-		        $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:500});
-		 });
-    </script>
-
-
-    <script>
-	  $(document).ready(function(){
-	    $("a[href*=#]").on("click", function(e){
-	        var anchor = $(this);
-	        $('html, body').stop().animate({
-	            scrollTop: $(anchor.attr('href')).offset().top
-	        }, 777);
-	        e.preventDefault();
-	        return false;
-	    });
-	});
+		});
 	</script>
 </html>
