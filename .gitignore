@@ -105,3 +105,8 @@ venv.bak/
 
 # Keys
 secret.txt
+
+# DB migration stuff:
+migrations
+migrations/*
+
