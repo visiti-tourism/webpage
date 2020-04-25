@@ -18,8 +18,10 @@ from django.urls import path
 from . import views
 from myapi import views as myapiviews
 from excursions import views as excurionviews
-from django.urls import include
+from users import views as usersviews
+from django.conf.urls import include
 from rest_framework import routers
+
 
 router = routers.DefaultRouter()
 router.register(r'users', myapiviews.UserViewSet)
@@ -35,7 +37,7 @@ urlpatterns = [
     path('uploadtour/', excurionviews.register, name='register'),
     path('home#app/', views.app, name='app'),
     path('signin/', views.signin, name='signin'),
+    path('register/', usersviews.register, name='user_registration'),
     path('', include(router.urls)),
-    path('api-auth/',
-         include('rest_framework.urls', namespace='rest_framework'))
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 ]
