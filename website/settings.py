@@ -32,14 +32,17 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 INSTALLED_APPS = [
     'myapi.apps.MyapiConfig',
+    'users.apps.UsersConfig',
     'excursions.apps.ExcursionsConfig',
     'django.contrib.admin',
+    'social_django',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -130,3 +133,5 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10
 }
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
