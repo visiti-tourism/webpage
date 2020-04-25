@@ -6,20 +6,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css" media="all">
-		<link rel="stylesheet" type="text/css" href="../static/css/style.css">
-		<link rel="stylesheet" type="text/css" href="../static/css/media.css" media="all">
-		<link rel="stylesheet" type="text/css" href="../static/css/animate.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/media.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/css/animate.css" media="all">
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
 
 	</head>
 	<body>
 		<!--NAVIGATION MENU-->
-		<picture><img src="../static/images/background-laptop.png" class="main_background"></picture>
+		<picture><img src="/static/images/background-laptop.png" class="main_background"></picture>
 
 
-		<picture><img src="../static/images/mobile_background.png" class="mobile_background"></picture>
+		<picture><img src="/static/images/mobile_background.png" class="mobile_background"></picture>
 
 
 
@@ -60,6 +60,15 @@
 			</div>
 		</div>
 
+        <div>
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
 
 
 <!------
@@ -82,8 +91,8 @@
 				<div class="row">
 						<div class="col-sm-1"></div>
 						<div class="col-xs-12 col-md-6 col-md-push-5">
-							<img src="../static/images/homePage.png" class="homePage">
-							<img src="../static/images/mobile_homePage.png" class="mobile_homeImage">
+							<img src="/static/images/homePage.png" class="homePage">
+							<img src="/static/images/mobile_homePage.png" class="mobile_homeImage">
 						</div>
 						<div class=" col-xs-12 col-md-5 col-md-pull-6 wow animated fadeInDown">
 							<h1 class="first_title">Grow your business with Visiti</h1>
@@ -106,7 +115,7 @@
 				<div class="row">
 					<div class="col-sm-1"></div>
 					<div class="col-sm-2 col-xs-5">
-						<img src="../static/images/Number_1.png" class="Number_1  wow animated fadeInLeft">
+						<img src="/static/images/Number_1.png" class="Number_1  wow animated fadeInLeft">
 
 					</div>
 
@@ -124,7 +133,7 @@
 				<div class="row">
 					<div class="col-sm-7"></div>
 					<div class="col-sm-4 col-xs-12">
-						<img src="../static/images/Number_2.png" class="Number_2  wow animated fadeInRight">
+						<img src="/static/images/Number_2.png" class="Number_2  wow animated fadeInRight">
 						<h2 class="Number_2_text style_of_text_numbers wow animated fadeInRight">We check your information<br/> and give you access to upload proposals</h2>
 					</div>
 						<div class="col-sm-1"></div>
@@ -136,7 +145,7 @@
 				<div class="row">
 					<div class="col-sm-1"></div>
 					<div class="col-sm-2 col-xs-5">
-						<img src="../static/images/Number_3.png" class="Number_3  wow animated fadeInLeft">
+						<img src="/static/images/Number_3.png" class="Number_3  wow animated fadeInLeft">
 					</div>
 
 					<div class="col-sm-3 col-xs-5">
@@ -154,7 +163,7 @@
 						<h2 class="Number_4_text style_of_text_numbers wow animated fadeInRight">Users choose and book tours</h2>
 					</div>
 					<div class="col-sm-4 col-xs-5">
-						<img src="../static/images/Number_4.png" class="Number_4  wow animated fadeInRight">
+						<img src="/static/images/Number_4.png" class="Number_4  wow animated fadeInRight">
 					</div>
 						<div class="col-sm-1"></div>
 
@@ -182,12 +191,12 @@
 
 					<div class="col-sm-4"></div>
 					<div class="col-sm-2 col-xs-12">
-						    <button type="button" class="download_buttons" onclick="window.location.href = 'https://docs.google.com/uc?export=download&id=1krn1fDAlOhspFY5nSa-f_lb2LLNhwCD6';"><img class="download_buttons_img" src="../static/images/Google_button.png"></button>
+						    <button type="button" class="download_buttons" onclick="window.location.href = 'https://docs.google.com/uc?export=download&id=1krn1fDAlOhspFY5nSa-f_lb2LLNhwCD6';"><img class="download_buttons_img" src="/static/images/Google_button.png"></button>
                     </div>
 
 
 					<div class="col-sm-2 col-xs-12">
-						<button type="button" class="download_buttons"><img class="download_buttons_img" src="../static/images/Apple_button1.png"></button>
+						<button type="button" class="download_buttons"><img class="download_buttons_img" src="/static/images/Apple_button1.png"></button>
 					</div>
 					<div class="col-sm-4"></div>
 
@@ -196,7 +205,7 @@
 		</main>
 	</body>
 
-	<script src="../static/js/wow.min.js"></script>
+	<script src="/static/js/wow.min.js"></script>
 	<script>
     	new WOW().init();
 		    (function($){
