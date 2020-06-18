@@ -15,6 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+
+from excursions.views import (
+    ExcursionListView,
+    ExcursionDetailView,
+    ExcursionCreateView
+)
 from . import views
 from myapi import views as myapiviews
 from excursions import views as excurionviews
@@ -32,12 +38,12 @@ router.register(r'groups', myapiviews.GroupViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('home/', views.index, name='index'),
-    #path('uploadtour/', views.uploadtour, name='uploadtour'),
-    path('uploadtour/', excurionviews.register, name='register'),
-    path('home#app/', views.app, name='app'),
-    path('signin/', views.signin, name='signin'),
-    path('register/', usersviews.register, name='user_registration'),
+    path('app/', views.app, name='app'),
+    path('profile/', usersviews.profile, name='profile'),
     path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('accounts/', include('allauth.urls')),
+    path('excursions/', ExcursionListView.as_view(), name='excursions-list'),
+    path('excursion/<int:pk>/', ExcursionDetailView.as_view(), name='excursion-detail'),
+    path('excursion/new/', ExcursionCreateView.as_view(), name='excursion-create')
 ]
