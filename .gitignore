@@ -110,3 +110,6 @@ secret.txt
 migrations
 migrations/*
 
+# File with settings
+website/settings.py
+
