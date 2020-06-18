@@ -1,0 +1,22 @@
+{% load static from staticfiles %}
+{% load socialaccount %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>{{ user.username }}</h1>
+<form action="/">
+<button>Home</button>
+</form>
+<form action="/accounts/logout">
+<button>Logout</button>
+</form>
+</body>
+</html>
+
+{% endblock %}
