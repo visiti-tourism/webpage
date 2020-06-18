@@ -28,21 +28,21 @@
 							<div class="row">
 								<div class="col-sm-3"></div>
 								<div class="col-sm-2">
-									<a href="/home">Home</a>
+									<a href="/">Home</a>
 								</div>
 
 								<div class="col-sm-2">
-									<a href="/uploadtour">Add Tour</a>
+									<a href="{% url 'excursion-create' %}">Add Tour</a>
 								</div>
 
 
 
 								<div class="col-sm-2">
-									<a href="/home#app" class="active_page">App</a>
+									<a href="/#app" class="active_page">App</a>
 								</div>
 
 								<div class="col-sm-3">
-									<button class="button_signin" onclick="location.href='#signin">Sign in</button>
+									<button class="button_signin" onclick="location.href='/accounts/login'">Sign in</button>
 								</div>
 							</div>
 						</div>

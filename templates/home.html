@@ -1,4 +1,6 @@
 {% load static from staticfiles %}
+{% load socialaccount %}
+{% block content %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,8 +25,6 @@
 
 		<picture><img src="{% static 'images/mobile_background.png' %}" class="mobile_background"></picture>
 
-
-
 		<div class="container-fluid">
 			<div class="row">
 
@@ -37,23 +37,21 @@
 							<div class="row">
 								<div class="col-sm-3"></div>
 								<div class="col-sm-2">
-									<a href="/home" class="active_page">Home</a>
+									<a href="/" class="active_page">Home</a>
 								</div>
 
 								<div class="col-sm-2">
-									<a href="/uploadtour">Add Tour</a>
+									<a href="{% url 'excursion-create' %}">Add Tour</a>
 								</div>
-
-
 
 								<div class="col-sm-2">
-									<a href="/home#app">App</a>
+									<a href="/#app">App</a>
 								</div>
 
-								<div class="col-sm-3">
-
-										<button class="button_signin">Sign in</button>
-
+								<div class="col-sm-3 main-nav">
+									<form action="/accounts/login">
+										<button class="button_signin" href="/accounts/login">Log in</button>
+									</form>
 								</div>
 							</div>
 						</div>
@@ -61,17 +59,6 @@
 
 			</div>
 		</div>
-
-        <div>
-            {% if messages %}
-                {% for message in messages %}
-                    <div class="alert alert-{{ message.tags }}">
-                        {{ message }}
-                    </div>
-                {% endfor %}
-            {% endif %}
-        </div>
-
 
 <!------
 		<div class="hamburger-menu">
@@ -101,8 +88,10 @@
 							<h2 class="first_subtitle">Fill up your guided groups in there easy steps</h2>
 
 							<div class="main-buttons">
-								<button class="button_learnmore">Learn more</button>
-								<button class="button_signup">Sign up</button>
+                                <form action="accounts/signup">
+                                    <button class="button_learnmore">Learn more</button>
+                                    <button class="button_signup" href="/accounts/signup/">Sign up</button>
+                                </form>
 							</div>
 						</div>
 
@@ -122,10 +111,13 @@
 					</div>
 
 					<div class="col-sm-2 col-xs-5">
-						<h2 class="Number_1_text style_of_text_numbers wow animated fadeInLeft">You sign up on our website</h2>
-
+                        <form action="accounts/signup">
+                            <h2 class="Number_1_text style_of_text_numbers wow animated fadeInLeft">You sign up on our website</h2>
+                            <button class="button_signup" href="/accounts/signup">Sign up</button>
+                        </form>
 					</div>
-						<div class="col-sm-7 col-xs-2"></div>
+
+					<div class="col-sm-7 col-xs-2"></div>
 
 				</div>
 			</div>
@@ -188,18 +180,19 @@
 				</div>
 			</div>
 
-			<div class="container-fluid wow animated fadeInUp">
-				<div class="row">
+			<div class="container-fluid">
+				<div class="row  wow animated fadeInUp">
 
 					<div class="col-sm-4"></div>
-					<div class="col-sm-2 col-xs-12">
-						    <button type="button" class="download_buttons" onclick="window.location.href = 'https://docs.google.com/uc?export=download&id=1krn1fDAlOhspFY5nSa-f_lb2LLNhwCD6';"><img class="download_buttons_img" src="{% static 'images/Google_button.png' %}"></button>
-                    </div>
 
+					<div class="col-sm-2 col-xs-12">
+						<button type="button" class="download_buttons"><img class="download_buttons_img" src="{% static 'images/Google_button.png' %}"></button>
+					</div>
 
 					<div class="col-sm-2 col-xs-12">
 						<button type="button" class="download_buttons"><img class="download_buttons_img" src="{% static 'images/Apple_button1.png' %}"></button>
 					</div>
+
 					<div class="col-sm-4"></div>
 
 				</div>
@@ -244,4 +237,5 @@
 		    });
 		});
 	</script>
+{% endblock %}
 </html>
