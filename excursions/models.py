@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import datetime
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 
 class Excursion(models.Model):
@@ -10,4 +11,10 @@ class Excursion(models.Model):
     duration = models.FloatField(default=0.0)
     comment = models.TextField(default='No comment was provided')
     created = models.DateTimeField('Created', default=datetime.now)
-    #agent = models.ForeignKey(User, on_delete=models.CASCADE) #TODO: ADD AGENT FIELD TO POST REQUEST
+    agent = models.ForeignKey(User, on_delete=models.CASCADE, default=None)
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse('excursion-detail', kwargs={'pk': self.pk})
