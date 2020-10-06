@@ -25,7 +25,7 @@ from . import views
 from myapi import views as myapiviews
 from excursions import views as excurionviews
 from users import views as usersviews
-from django.conf.urls import include
+from django.conf.urls import url, include
 from rest_framework import routers
 
 
@@ -36,6 +36,7 @@ router.register(r'groups', myapiviews.GroupViewSet)
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
+    url(r'^admin/', admin.site.urls),
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('app/', views.app, name='app'),
