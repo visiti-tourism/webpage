@@ -8,6 +8,12 @@
 git clone -b development https://github.com/visiti-tourism/webpage $$ cd webpage
 ```
 
+### Install additional modules
+
+```
+sudo apt-get install libmysqlclient-dev
+```
+
 ### Create virtual environment
 
 ```
