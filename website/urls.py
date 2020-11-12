@@ -50,5 +50,7 @@ urlpatterns = [
     path('excursion/new/', ExcursionCreateView.as_view(), name='excursion-create'),
     path('api/excursions/', ExcursionApiView.excursion_list, name='excursions-api-list'),
     path('api-token-auth/', obtain_auth_token, name='api_token_auth'),
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.jwt')),
     #path('api/excursion/(<int:pk>', ExcursionApiView)
 ]
