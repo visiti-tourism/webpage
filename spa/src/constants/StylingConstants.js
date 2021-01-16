@@ -15,4 +15,14 @@ export const colors = {
   COLOR_PRIMARY_100: "#FE862C",
   COLOR_YELLOW_100: "#FFC833",
   COLOR_WHITE: "#FFF",
+  COLOR_BEIGE: "#F9F5F2",
+  COLOR_BORDER_LIGHT: "#EBF0FF"
+};
+
+export const theme = {
+  rainbow: {
+      palette: {
+          brand: colors.COLOR_PRIMARY_100,
+      },
+  },
 };

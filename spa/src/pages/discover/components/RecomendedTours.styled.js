@@ -48,7 +48,7 @@ export const PopularToursImg = styled.div`
 
 export const Location = styled.div`
   margin: 5px 0;
-  width: 100%;
+  width: max-content;
   display: flex;
   align-items: center;
   height: 25px;

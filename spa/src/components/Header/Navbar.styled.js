@@ -4,8 +4,7 @@ import { Container } from "../../App.styled";
 import { colors, fontSizes } from "../../constants/StylingConstants";
 
 export const Nav = styled.nav`
-  background: #fff;
-  height: 80px;
+  background: ${({ beige }) => (beige ? colors.COLOR_BEIGE : colors.COLOR_WHITE)};
   display: flex;
   justify-content: center;
   align-items: center;

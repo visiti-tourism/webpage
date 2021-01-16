@@ -54,6 +54,7 @@ export const StyledApp = styled.div`
       color: ${colors.TEXT_PRIMARY};
       font-size: ${fontSizes.font14};
       font-weight: 400;
+      text-decoration: none;
     }
   }
 
