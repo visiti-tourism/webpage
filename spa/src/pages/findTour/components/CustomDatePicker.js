@@ -1,9 +1,5 @@
 import React from "react";
-import {DatePicker} from "react-rainbow-components" 
-
-import { colors } from "../../../constants/StylingConstants";
-
-
+import { DatePicker } from "react-rainbow-components";
 
 function CustomDatePicker({ label }) {
   const [selectedDate, setSelectedDate] = React.useState(
@@ -16,13 +12,13 @@ function CustomDatePicker({ label }) {
 
   return (
     <DatePicker
-    formatStyle="large"
-    value={selectedDate}
-    label={label}
-    labelAlignment="left"
-    onChange={handleDateChange}
-    style={{width: "250px"}}
-  />
+      formatStyle="large"
+      value={selectedDate}
+      label={label}
+      labelAlignment="left"
+      onChange={handleDateChange}
+      style={{ width: "250px" }}
+    />
   );
 }
 

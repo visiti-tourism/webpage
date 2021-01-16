@@ -16,7 +16,8 @@ export const colors = {
   COLOR_YELLOW_100: "#FFC833",
   COLOR_WHITE: "#FFF",
   COLOR_BEIGE: "#F9F5F2",
-  COLOR_BORDER_LIGHT: "#EBF0FF"
+  COLOR_BORDER_LIGHT: "#EBF0FF",
+  COLOR_BORDER_PRIMARY: "#E0E0E0"
 };
 
 export const theme = {
