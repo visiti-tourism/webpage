@@ -3,29 +3,30 @@ from datetime import datetime
 from django.contrib.auth.models import User
 from django.urls import reverse
 
+
 class Country(models.Model):
-    name = models.CharField(max_length=30)
+    name = models.CharField(max_length=30, default="None")
 
     def __str__(self):
         return self.name
 
 
 class City(models.Model):
-    name = models.CharField(max_length=30)
-    country = models.ForeignKey(Country, on_delete = models.CASCADE) 
+    name = models.CharField(max_length=30, default="None")
+    country = models.ForeignKey(Country, on_delete=models.CASCADE, default=1)
 
     def __str__(self):
         return self.name
 
-class Excursion(models.Model):
 
+class Excursion(models.Model):
     name = models.CharField(max_length=100)
-    description = models.TextField(max_length=1000)
-    country = models.ForeignKey(Country, on_delete = models.CASCADE)
-    city = models.ForeignKey(City, on_delete = models.CASCADE)
-    start_time = models.DateTimeField(auto_now=False, auto_now_add=False)
-    end_time = models.DateTimeField(auto_now=False, auto_now_add=False)
-    image_title = models.ImageField(upload_to = "static/images/excursions/",default = "none")
+    description = models.TextField(max_length=1000, default="None")
+    country = models.ForeignKey(Country, on_delete=models.CASCADE, default=1)
+    city = models.ForeignKey(City, on_delete=models.CASCADE, default=1)
+    start_time = models.DateTimeField(auto_now=False, auto_now_add=False, default=datetime.now)
+    end_time = models.DateTimeField(auto_now=False, auto_now_add=False, default=datetime.now)
+    image_title = models.ImageField(upload_to="static/images/excursions/", default="None")
 
     def __str__(self):
         return self.name
