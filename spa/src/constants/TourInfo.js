@@ -26,8 +26,7 @@ export const allTours = [
     'numberOfReviews': "38",
     'numberOfStars': "3",
     'date': "2 PM Sunday, 12-10-2021", 
-    'price': "17‎",
-    'location': "Paris, France"
+    'price': "17‎"
   }, 
   {
   'id': 4,
@@ -79,5 +78,3 @@ export const allTours = [
   'location': "Rome, Italy"
 }, 
 ]
-
-

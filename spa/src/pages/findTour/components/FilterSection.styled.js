@@ -9,4 +9,22 @@ export const Wrapper = styled.div`
     margin: 20px 15px 10px;
     font-weight: 500;
   }
+  @media screen and (max-width: 420px) {
+      width: 80vw;
+      margin: 0 auto;
+  }
+`;
+
+export const FilterDesktop = styled.div` 
+
+  @media screen and (max-width: 420px) {
+    display: none;
+  }
+`;
+
+export const FilterMobile = styled.div` 
+display: none;
+  @media screen and (max-width: 420px) {
+    display: inline;
+  }
 `;

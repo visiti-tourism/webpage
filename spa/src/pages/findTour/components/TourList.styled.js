@@ -1,20 +1,30 @@
 import styled from "styled-components";
-import { colors } from "../../../constants/StylingConstants";
+import {colors} from "../../../constants/StylingConstants"
 
 export const Wrapper = styled.div`
-  margin: 40px 20px;
+  margin: 40px;
   display: flex;
   gap: 23px;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  @media screen and (max-width: 420px) {
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+  }
 `;
 
 export const ListContainer = styled.div`
-  width: 850px;
+  width: 875px;
   background-color: white;
   height: max-content;
   box-sizing: border-box;
   border-radius: 30px;
   padding: 17px 20px 100px;
+  @media screen and (max-width: 420px) {
+    width: 80vw;
+    padding: 0px 10 0px; 
+  }
 `;
 
 export const Banner = styled.div`
@@ -27,9 +37,12 @@ export const Banner = styled.div`
   box-sizing: border-box;
   border-radius: 30px;
   padding: 40px 60px;
-  img {
+  img{
     height: 240px;
     margin-top: -100px;
+  }
+  @media screen and (max-width: 420px) {
+    display: none;
   }
 `;
 
@@ -39,7 +52,7 @@ export const BannerText = styled.div`
   justify-content: space-between;
   width: 70%;
   margin-top: -10px;
-  h6 {
+  h6{
     font-weight: 400;
   }
 `;
@@ -60,10 +73,13 @@ export const BannerButton = styled.button`
 export const SearchBar = styled.div`
   height: 95px;
   margin: 30px 10px;
+  @media screen and (max-width: 420px) {
+    display: none;
+  }
 `;
 
 export const SearchBarInputs = styled.div`
-  margin-top: 20px;
+margin-top: 20px;
   display: flex;
   justify-content: space-between;
   @media only screen and (max-width: 420px) {
@@ -78,4 +94,7 @@ export const ToursWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 44px;
+  @media only screen and (max-width: 420px) {
+    margin: 20px auto 0;
+  }
 `;

@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 420px) {
+    flex-direction: column;
+  }
 `;
 
 export const TourImg = styled.div`
@@ -34,6 +37,9 @@ export const TourDescription = styled.div`
   @media only screen and (max-width: 420px) {
     width: 90%;
     margin: 0 auto;
+    h2 {
+      width: 70vw;
+    }
   }
 `;
 
@@ -41,4 +47,13 @@ export const DescriptionBottom = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+`;
+export const Review = styled.div`
+display: flex;
+align-items: center;
+gap: 10px;
+@media only screen and (max-width: 420px) {
+  align-items: flex-start;
+  margin: 10px 0;
+}
 `;
