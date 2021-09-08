@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { Container } from "../../App.styled";
-import { colors, fontSizes } from "../../constants/StylingConstants";
+import {Link} from "react-router-dom";
+import {Container} from "../../App.styled";
+import {colors, fontSizes} from "../../constants/StylingConstants";
 
 export const Nav = styled.nav`
-  background: ${({ beige }) => (beige ? colors.COLOR_BEIGE : colors.COLOR_WHITE)};
+  background: ${({beige}) => (beige ? colors.COLOR_BEIGE : colors.COLOR_WHITE)};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,9 +19,11 @@ export const NavbarContainer = styled(Container)`
   justify-content: space-between;
   height: 80px;
   ${Container};
+
   h2 {
     display: none;
   }
+
   @media screen and (max-width: 420px) {
     h2 {
       display: inline;
@@ -66,7 +68,7 @@ export const NavMenu = styled.ul`
     height: 90vh;
     position: absolute;
     top: 60px;
-    left: ${({ click }) => (click ? 0 : "-100%")};
+    left: ${({click}) => (click ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
     background: #fff;
@@ -76,12 +78,14 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
   height: 80px;
   border-bottom: 2px solid transparent;
+
   &:hover {
     border-bottom: 2px solid ${colors.COLOR_PRIMARY_100};
   }
+
   @media screen and (max-width: 420px) {
     width: 100%;
-    margin: none;
+    margin: 0;
     &:hover {
       border: none;
     }
@@ -106,6 +110,22 @@ export const NavLinks = styled(Link)`
   padding: 0.5rem 1rem;
   height: 100%;
   width: 100%;
+
+  &:hover {
+    color: ${colors.TEXT_PRIMARY};
+    text-decoration: none;
+  }
+
+  &:active {
+    color: ${colors.TEXT_PRIMARY};
+    text-decoration: none;
+  }
+
+  &:focus {
+    color: ${colors.TEXT_PRIMARY};
+    text-decoration: none;
+  }
+
   @media screen and (max-width: 420px) {
     box-sizing: border-box;
     text-align: center;
@@ -129,4 +149,10 @@ export const NavBtnLink = styled(Link)`
   width: 100%;
   border: none;
   outline: none;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
 `;

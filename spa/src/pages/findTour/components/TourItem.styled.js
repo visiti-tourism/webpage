@@ -15,6 +15,7 @@ export const TourImg = styled.div`
     object-fit: cover;
     border-radius: 15px;
   }
+
   @media only screen and (max-width: 420px) {
     margin: 0 auto 10px;
     width: 90%;
@@ -31,9 +32,11 @@ export const TourDescription = styled.div`
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  h2{
+
+  h2 {
     width: 300px
   }
+
   @media only screen and (max-width: 420px) {
     width: 90%;
     margin: 0 auto;
@@ -48,12 +51,13 @@ export const DescriptionBottom = styled.div`
   justify-content: space-between;
   align-items: center;
 `;
+
 export const Review = styled.div`
-display: flex;
-align-items: center;
-gap: 10px;
-@media only screen and (max-width: 420px) {
-  align-items: flex-start;
-  margin: 10px 0;
-}
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  @media only screen and (max-width: 420px) {
+    align-items: flex-start;
+    margin: 10px 0;
+  }
 `;

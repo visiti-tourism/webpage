@@ -8,9 +8,9 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 
   @media screen and (max-width: 420px) {
-      flex-direction:column;
-      justify-content: center;
-      align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -23,7 +23,7 @@ export const ListContainer = styled.div`
   padding: 17px 20px 100px;
   @media screen and (max-width: 420px) {
     width: 80vw;
-    padding: 0px 10 0px; 
+    padding: 0px 10 0px;
   }
 `;
 
@@ -37,10 +37,12 @@ export const Banner = styled.div`
   box-sizing: border-box;
   border-radius: 30px;
   padding: 40px 60px;
-  img{
+
+  img {
     height: 240px;
     margin-top: -100px;
   }
+
   @media screen and (max-width: 420px) {
     display: none;
   }
@@ -52,7 +54,8 @@ export const BannerText = styled.div`
   justify-content: space-between;
   width: 70%;
   margin-top: -10px;
-  h6{
+
+  h6 {
     font-weight: 400;
   }
 `;
@@ -79,7 +82,7 @@ export const SearchBar = styled.div`
 `;
 
 export const SearchBarInputs = styled.div`
-margin-top: 20px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   @media only screen and (max-width: 420px) {

@@ -17,9 +17,11 @@ export const HeroDescriptionWraper = styled.div`
 export const HeroText = styled.div`
   width: 65%;
   text-align: right;
+
   h1 {
     margin-bottom: 20px;
   }
+
   @media only screen and (max-width: 420px) {
     width: 80%;
     text-align: center;
@@ -51,18 +53,23 @@ export const ProsItem = styled.div`
     width: 26%;
     margin-bottom: 10px;
   }
+
   width: 28%;
   text-align: center;
+
   h3 {
     line-height: 25px;
   }
+
   h4 {
     line-height: 25px;
   }
+
   @media only screen and (max-width: 420px) {
     img {
       width: 20%;
     }
+
     width: 90%;
   }
 `;

@@ -1,20 +1,22 @@
 import React from "react";
 import Navbar from "../../components/Header/Navbar";
 import Hero from "./components/Hero";
-import RecomendedTours from "./components/RecomendedTours";
+import RecommendedTours from "./components/RecommendedTours";
 import NewTours from "./components/NewTours"
 import FindTour from "./components/FindTour";
-import Footer  from "../../components/Footer/Footer"
+import Footer from "../../components/Footer/Footer"
 
-export const Discover = () => (
-  <React.Fragment>
-    <Navbar></Navbar>
-    <Hero></Hero>
-    <RecomendedTours></RecomendedTours>
-    <NewTours></NewTours>
-    <FindTour></FindTour> 
-    <Footer></Footer>
-  </React.Fragment>
-);
+function Discover() {
+    return (
+        <>
+            <Navbar></Navbar>
+            <Hero></Hero>
+            <RecommendedTours></RecommendedTours>
+            <NewTours></NewTours>
+            <FindTour></FindTour>
+            <Footer></Footer>
+        </>
+    );
+}
 
 export default Discover;
