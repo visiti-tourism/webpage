@@ -1,5 +1,5 @@
 import {StyledApp} from "./App.styled.js";
-import Routing from "./pages/routing/Router";
+import Routing from "./pages/Routing/Router";
 
 function App() {
     return (

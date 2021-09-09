@@ -7,7 +7,7 @@ import {
 } from "react-rainbow-components";
 import CustomizedSlider from "./CustomSlider";
 import {Application} from "react-rainbow-components";
-import {theme} from "../../../constants/StylingConstants";
+import {theme} from "../../../constants/Styles";
 
 const options1 = [
     {

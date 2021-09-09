@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import {colors, fontSizes} from "../../constants/StylingConstants"
+import {colors, fontSizes} from "../../constants/Styles"
 
 export const Button = styled.button`
   margin: ${({center}) => (center ? '20px 100px 0 100px' : '0')};

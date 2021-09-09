@@ -10,7 +10,7 @@ import {
     BigTourImg,
     BigTourText,
 } from "./NewTours.styled.js";
-import {Button} from "../../../components/Buttons/Button.styled";
+import {Button} from "../../../components/Button/Button.styled";
 import {Title} from "../../../App.styled";
 
 function NewTours() {

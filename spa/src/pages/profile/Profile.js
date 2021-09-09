@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../../components/Header/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import AccountInfo from "./components/AccountInfo";
 import ToursContainer from "./components/ToursContainer";

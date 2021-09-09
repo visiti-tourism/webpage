@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../../components/Header/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer"
-import TourList from "../findTour/components/TourList"
+import TourList from "../FindTour/components/TourList"
 import {Wrapper} from "./components/TourList.styled"
 import FilterSection from "./components/FilterSection"
 

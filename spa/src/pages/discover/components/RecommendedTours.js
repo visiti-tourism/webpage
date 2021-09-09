@@ -1,19 +1,19 @@
 import React from "react";
 import {
-    PopularToursWraper,
+    PopularToursWrapper,
     PopularToursDescription,
     PopularToursImg,
     Location,
     DescriptionTop,
 } from "./RecommendedTours.styled";
-import {Button} from "../../../components/Buttons/Button.styled";
+import {Button} from "../../../components/Button/Button.styled";
 import {Title} from "../../../App.styled";
 
 function RecommendedTours() {
     return (
         <div>
             <Title>Explore the most popular tours</Title>
-            <PopularToursWraper>
+            <PopularToursWrapper>
                 <PopularToursImg>
                     <img src="images\tour-img-1.svg" alt="tour"/>
                 </PopularToursImg>
@@ -41,7 +41,7 @@ function RecommendedTours() {
                         Bernini, Botticelli, Raphael, Caravaggio, Giotto, and hundreds more.
                     </h4>
                 </PopularToursDescription>
-            </PopularToursWraper>
+            </PopularToursWrapper>
         </div>
     );
 }

@@ -9,13 +9,13 @@ import {
     ToursWrapper,
 } from "./TourList.styled";
 import TourItem from "../components/TourItem";
-import {allTours} from "../../../constants/TourInfo";
+import {allTours} from "../../../constants/AllTours";
 import {
     Picklist,
     Option,
     Application,
 } from "react-rainbow-components";
-import {theme} from "../../../constants/StylingConstants";
+import {theme} from "../../../constants/Styles";
 
 function TourList() {
     const [selectedLocation, setSelectedLocation] = React.useState("");

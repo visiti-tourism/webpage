@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Tooltip from "@material-ui/core/Tooltip";
 import Slider from "@material-ui/core/Slider";
 import {withStyles, makeStyles} from "@material-ui/core/styles";
-import {colors, fontSizes} from "../../../constants/StylingConstants";
+import {colors, fontSizes} from "../../../constants/Styles";
 import {CounterInput} from "react-rainbow-components";
 
 const useStyles = makeStyles((theme) => ({

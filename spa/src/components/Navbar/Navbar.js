@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {Button} from "../Buttons/Button.styled";
+import {Button} from "../Button/Button.styled";
 import {FaBars, FaTimes} from "react-icons/fa";
 import {
     Nav,

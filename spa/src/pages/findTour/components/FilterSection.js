@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Wrapper, FilterMobile, FilterDesktop} from "./FilterSection.styled.js";
-import {Location} from "../../discover/components/RecommendedTours.styled";
+import {Location} from "../../Discover/components/RecommendedTours.styled";
 import Filters from "./Filters";
 
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {colors, fontSizes} from "./constants/StylingConstants";
+import {colors, fontSizes} from "./constants/Styles";
 
 export const StyledApp = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");

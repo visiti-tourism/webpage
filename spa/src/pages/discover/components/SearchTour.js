@@ -1,8 +1,8 @@
 import React from "react";
-import {FindTourWrapper, Text} from "./FindTour.styled";
-import {Button} from "../../../components/Buttons/Button.styled";
+import {FindTourWrapper, Text} from "./SearchTour.styled";
+import {Button} from "../../../components/Button/Button.styled";
 
-function FindTour() {
+function SearchTour() {
     return (
         <FindTourWrapper>
             <img src="images\icon-zoom.svg" alt="illustration"/>
@@ -17,4 +17,4 @@ function FindTour() {
     );
 }
 
-export default FindTour;
+export default SearchTour;

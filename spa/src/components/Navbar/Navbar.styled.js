@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 import {Container} from "../../App.styled";
-import {colors, fontSizes} from "../../constants/StylingConstants";
+import {colors, fontSizes} from "../../constants/Styles";
 
 export const Nav = styled.nav`
   background: ${({beige}) => (beige ? colors.COLOR_BEIGE : colors.COLOR_WHITE)};

@@ -1,12 +1,12 @@
 import React from "react";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import Discover from "../discover/Discover";
-import FindTour from "../findTour/FindTour"
-import Profile from "../profile/Profile"
-import SignIn from "../signIn/SignIn"
-import SignUp from "../signUp/SignUp"
-import ContactUs from "../contactUs/ContactUs";
-import ForAgencies from "../forAgencies/ForAgencies";
+import Discover from "../Discover/Discover";
+import FindTour from "../FindTour/FindTour"
+import Profile from "../Profile/Profile"
+import SignIn from "../SignIn/SignIn"
+import SignUp from "../SignUp/SignUp"
+import ContactUs from "../ContactUs/ContactUs";
+import ForAgencies from "../ForAgencies/ForAgencies";
 
 function Routing() {
     return (
