@@ -31,8 +31,8 @@ function SignUp() {
         }));
     }
     const handleClick = () => {
-        var apiBaseUrl = "http://127.0.0.1:8000/auth/users/";
-        var payload = {
+        const apiBaseUrl = "http://127.0.0.1:8000/auth/users/";
+        const payload = {
             "email": user.email,
             "username": user.username,
             "password": user.password
@@ -42,7 +42,7 @@ function SignUp() {
             .then(function (response) {
                 console.log(response);
                 if (response.data.code === 200) {
-                    console.log("Login successfull");
+                    console.log("Login successful");
                 } else if (response.data.code === 204) {
                     console.log("Username password do not match");
                     alert("username password do not match")

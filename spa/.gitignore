@@ -6,8 +6,6 @@
 .pnp.js
 .eslintcache
 
-package.json
-package-lock.json
 
 
 # testing
@@ -66,4 +64,3 @@ packages/react-devtools-extensions/.tempUserDataDir
 packages/react-devtools-inline/dist
 packages/react-devtools-shell/dist
 packages/react-devtools-scheduling-profiler/dist
-.eslintcache

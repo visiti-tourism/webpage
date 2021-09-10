@@ -239,5 +239,5 @@ export const StyledInput = styled.input`
   @media screen and (max-width: 420px) {
     width: 80vw;
   }
-  
+
 `;
