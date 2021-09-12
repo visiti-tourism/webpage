@@ -7,20 +7,22 @@ export const UserImg = styled.div`
 `;
 
 export const AccountInfoWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media screen and (max-width: 420px) {
   }
 `;
 export const UserName = styled.div`
-display:flex;
-justify-content: space-between;
-width: 130px;
-padding-top: 25px;
-h2 {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  padding-top: 25px;
+
+  h2 {
     font-weight: 500;
-}
+  }
+
   @media screen and (max-width: 420px) {
   }
 `;
@@ -33,11 +35,11 @@ export const UserDetailContainer = styled.ul`
 `;
 
 export const UserDetailItem = styled.li`
-width:340px;
-display: flex;
-justify-content: space-between;
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
 
-padding: 10px 0;
+  padding: 10px 0;
 
   @media screen and (max-width: 420px) {
     width: 80vw;
@@ -45,13 +47,15 @@ padding: 10px 0;
 `;
 
 export const DetailItemName = styled.li`
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100px;
-    img {
-        padding-right: 20px;
-    }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100px;
+
+  img {
+    padding-right: 20px;
+  }
+
   @media screen and (max-width: 420px) {
   }
 `;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, fontSizes } from "./constants/StylingConstants";
+import {colors, fontSizes} from "./constants/Styles";
 
 export const StyledApp = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
@@ -9,7 +9,7 @@ export const StyledApp = styled.div`
   }
 
   * {
-    font-family: Rubik;
+    font-family: Rubik, sans-serif;
 
     h1,
     h2,
@@ -20,36 +20,43 @@ export const StyledApp = styled.div`
       margin: 0;
       font-weight: 400;
     }
+
     h1 {
       color: ${colors.TEXT_PRIMARY};
       font-size: ${fontSizes.font24};
       line-height: 43px;
       font-weight: 700;
     }
+
     h2 {
       color: ${colors.TEXT_PRIMARY};
       font-size: ${fontSizes.font14};
     }
+
     h3 {
       color: ${colors.TEXT_PRIMARY};
       font-size: ${fontSizes.font14};
       line-height: 25px;
     }
+
     h4 {
       color: ${colors.TEXT_SECONDARY};
       font-size: ${fontSizes.font14};
       font-weight: 400;
       line-height: 25px;
     }
+
     h5 {
       color: ${colors.TEXT_SECONDARY};
       font-size: ${fontSizes.font12};
     }
+
     h6 {
       color: ${colors.TEXT_PRIMARY};
       font-size: ${fontSizes.font16};
       font-weight: 500;
     }
+
     a {
       color: ${colors.TEXT_PRIMARY};
       font-size: ${fontSizes.font14};
@@ -65,25 +72,30 @@ export const StyledApp = styled.div`
       line-height: 30px;
       font-weight: 700;
     }
+
     h2 {
       color: ${colors.TEXT_PRIMARY};
       font-size: ${fontSizes.font};
     }
+
     h3 {
       color: ${colors.TEXT_PRIMARY};
       font-size: ${fontSizes.font12};
       line-height: 25px;
     }
+
     h4 {
       color: ${colors.TEXT_SECONDARY};
       font-size: ${fontSizes.font12};
       font-weight: 400;
       line-height: 25px;
     }
+
     h5 {
       color: ${colors.TEXT_SECONDARY};
       font-size: ${fontSizes.font10};
     }
+
     h6 {
       color: ${colors.TEXT_PRIMARY};
       font-size: ${fontSizes.font14};

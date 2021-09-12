@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PopularToursWraper = styled.div`
+export const PopularToursWrapper = styled.div`
   width: 85%;
   margin: 45px auto;
   display: flex;

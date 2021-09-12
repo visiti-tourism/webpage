@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {colors} from "../../constants/StylingConstants"
+import {colors} from "../../constants/Styles"
 
 export const Select = styled.select`
   height: 50px;
@@ -7,9 +7,9 @@ export const Select = styled.select`
   padding: 16px;
   border-radius: 5px;
   border-color: ${colors.COLOR_BORDER_LIGHT};
-  color: ${colors.COLOR_SECONDARY};
+  color: ${colors.TEXT_SECONDARY};
 
-  &::selection{
+  &::selection {
     border-color: inherit;
   }
 `;

@@ -34,6 +34,7 @@ export const BigTourImg = styled.div`
     object-fit: cover;
     border-radius: 20px;
   }
+
   @media only screen and (max-width: 420px) {
     margin: 0 auto;
     border-radius: 10px;
@@ -47,11 +48,13 @@ export const BigTourImg = styled.div`
 export const BigTourText = styled.div`
   width: 96%;
   margin: 37px 0 0 10px;
+
   h2 {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 10px;
   }
+
   h4 {
     margin-top: 22px;
   }
@@ -75,6 +78,7 @@ export const SmallTourImg = styled.div`
 
 export const SmallTourText = styled.div`
   margin: 10px 0 0 20px;
+
   h3 {
     margin: 10px 0 22px 0;
   }
@@ -86,10 +90,12 @@ export const Location = styled.div`
   display: flex;
   align-items: center;
   height: 25px;
+
   img {
     height: 18px;
     margin-right: 10px;
   }
+
   h5 {
     margin-left: 10px;
   }

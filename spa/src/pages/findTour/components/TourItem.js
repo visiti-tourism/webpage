@@ -6,7 +6,7 @@ import {
   DescriptionBottom,
   Review,
 } from "./TourItem.styled";
-import {Location} from "../../discover/components/RecomendedTours.styled"
+import {Location} from "../../Discover/components/RecommendedTours.styled"
 
 function TourItem({ src, name, numberOfReviews, numberOfStars, date, price }) {
   return (
