@@ -11,7 +11,7 @@ import {Title} from "../../../App.styled";
 
 function RecommendedTours() {
     return (
-        <div>
+        <>
             <Title>Explore the most popular tours</Title>
             <PopularToursWrapper>
                 <PopularToursImg>
@@ -42,7 +42,7 @@ function RecommendedTours() {
                     </h4>
                 </PopularToursDescription>
             </PopularToursWrapper>
-        </div>
+        </>
     );
 }
 

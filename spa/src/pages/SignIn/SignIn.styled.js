@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import {Link} from "react-router-dom";
 
-
 export const BackgroundWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -26,18 +25,21 @@ export const Content = styled.div`
   align-items: flex-start;
 `;
 
-export const SignInText = styled.div`
+export const SignInWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   padding-top: 20vh;
   padding-bottom: 5vh;
+  padding-left: 10vh;
+`;
 
+export const SignInText = styled.div`
   h2 {
     padding-left: 7vw;
     font-weight: 500;
+    font-size: 20px;
   }
-
+  
   @media screen and (max-width: 420px) {
     justify-content: center;
     padding-top: 15vh;
@@ -126,6 +128,10 @@ export const GoogleButton = styled.button`
   img {
     padding-right: 12px;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 export const ContentImg = styled.div`
   padding-top: 5vh;
@@ -160,7 +166,7 @@ export const LoginBtnLink = styled(Link)`
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  margin: 5vh 0 5vh 0;
+  margin: 3vh 0 5vh 0;
   height: 100%;
   width: 100%;
   border: none;

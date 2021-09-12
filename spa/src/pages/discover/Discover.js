@@ -8,14 +8,14 @@ import Footer from "../../components/Footer/Footer"
 
 function Discover() {
     return (
-        <>
-            <Navbar></Navbar>
+        <div style={{backgroundColor: "#F9F5F2"}}>
+            <Navbar bgColor='beige'></Navbar>
             <Hero></Hero>
             <RecommendedTours></RecommendedTours>
             <NewTours></NewTours>
             <SearchTour></SearchTour>
-            <Footer></Footer>
-        </>
+            <Footer bgColor='beige'></Footer>
+        </div>
     );
 }
 

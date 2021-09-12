@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import axios from 'axios';
 import {Link} from "react-router-dom";
 import {Button} from "../../components/Button/Button.styled";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faChevronLeft} from '@fortawesome/free-solid-svg-icons'
 import {
     ContentImg,
     SignUpText,
@@ -12,7 +14,7 @@ import {
     BackgroundWrapper,
     ContentWrapper,
     LoginBtnLink,
-    StyledInput
+    StyledInput, SignUpWrapper
 } from "./SignUp.styled";
 
 function SignUp() {
@@ -56,9 +58,15 @@ function SignUp() {
         <>
             <BackgroundWrapper>
                 <ContentWrapper>
-                    <SignUpText>
-                        <h2>Create account</h2>
-                    </SignUpText>
+                    <SignUpWrapper>
+                        <Link to="/">
+                            <FontAwesomeIcon icon={faChevronLeft} size="2x"/>
+                        </Link>
+                        <SignUpText>
+                            <h2>Create Account</h2>
+                        </SignUpText>
+                    </SignUpWrapper>
+
                     <Content>
                         <SignUpInputs>
                             <a href="http://localhost:8000/accounts/google/login/?process=login">

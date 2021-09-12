@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const PopularToursWrapper = styled.div`
   width: 85%;
-  margin: 45px auto;
+  margin: 45px 180px;
   display: flex;
   justify-content: flex-start;
+
   @media only screen and (max-width: 420px) {
     width: 100%;
     flex-direction: column;
@@ -33,10 +34,12 @@ export const DescriptionTop = styled.div`
 
 export const PopularToursImg = styled.div`
   width: 35%;
+
   img {
     width: 100%;
     border-radius: 40px;
   }
+
   @media only screen and (max-width: 420px) {
     margin: 0 auto 10px;
     width: 90%;
@@ -52,10 +55,12 @@ export const Location = styled.div`
   display: flex;
   align-items: center;
   height: 25px;
+
   img {
     height: 18px;
     margin-right: 10px;
   }
+
   h5 {
     margin-left: 10px;
   }

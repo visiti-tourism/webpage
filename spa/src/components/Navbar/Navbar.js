@@ -67,6 +67,19 @@ function Navbar({bgColor}) {
                         </NavItem>
                         <NavItemBtn>
                             {button ? (
+                                <NavBtnLink to="/sign-in">
+                                    <Button>SIGN IN</Button>
+                                </NavBtnLink>
+                            ) : (
+                                <NavBtnLink to="/sign-in">
+                                    <Button onClick={closeMobileMenu} fontBig primary>
+                                        SIGN IN
+                                    </Button>
+                                </NavBtnLink>
+                            )}
+                        </NavItemBtn>
+                        <NavItemBtn>
+                            {button ? (
                                 <NavBtnLink to="/sign-up">
                                     <Button primary>SIGN UP</Button>
                                 </NavBtnLink>

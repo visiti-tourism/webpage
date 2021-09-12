@@ -8,14 +8,13 @@ import {
     SmallTourText,
     Location,
     BigTourImg,
-    BigTourText,
+    BigTourText, BigTourTextButton,
 } from "./NewTours.styled.js";
-import {Button} from "../../../components/Button/Button.styled";
 import {Title} from "../../../App.styled";
 
 function NewTours() {
     return (
-        <div>
+        <>
             <Title>Discover our newest tours</Title>
             <NewToursWrapper>
                 <NewToursLayoutSmall>
@@ -84,7 +83,7 @@ function NewTours() {
                                     <h5>116 reviews</h5>
                                 </Location>
                             </div>
-                            <Button>More</Button>
+                            <BigTourTextButton>More</BigTourTextButton>
                         </div>
                         <h4>
                             The works of the sculptor and architect Gian Lorenzo Bernini can
@@ -96,7 +95,7 @@ function NewTours() {
                     </BigTourText>
                 </NewToursLayoutBig>
             </NewToursWrapper>
-        </div>
+        </>
     );
 }
 

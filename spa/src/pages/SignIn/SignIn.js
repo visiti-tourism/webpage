@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import axios from 'axios';
 import {Link} from "react-router-dom";
 import {Button} from "../../components/Button/Button.styled";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faChevronLeft} from '@fortawesome/free-solid-svg-icons'
 import {
     BackgroundWrapper,
     Content,
@@ -11,7 +13,7 @@ import {
     GoogleButton,
     LoginBtnLink,
     SignInInputs,
-    SignInText,
+    SignInText, SignInWrapper,
     StyledInput
 } from "./SignIn.styled";
 
@@ -58,9 +60,14 @@ function SignIn() {
         <>
             <BackgroundWrapper>
                 <ContentWrapper>
-                    <SignInText>
-                        <h2>Log in</h2>
-                    </SignInText>
+                    <SignInWrapper>
+                        <Link to="/">
+                            <FontAwesomeIcon icon={faChevronLeft} size="2x"/>
+                        </Link>
+                        <SignInText>
+                            <h2>Log in</h2>
+                        </SignInText>
+                    </SignInWrapper>
                     <Content>
                         <SignInInputs>
                             <a href="http://localhost:8000/accounts/google/login/?process=login">
@@ -69,8 +76,8 @@ function SignIn() {
                             </a>
                             <hr data-content="OR"></hr>
                             <label>Email address</label>
-                            <StyledInput value={user.username} type="email" onChange={handleChange}
-                                         name="username"></StyledInput>
+                            <StyledInput value={user.email} type="email" onChange={handleChange}
+                                         name="email"></StyledInput>
                             <label>Password</label>
                             <StyledInput value={user.password} type="password" onChange={handleChange}
                                          name="password"></StyledInput>

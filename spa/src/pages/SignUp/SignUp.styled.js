@@ -26,16 +26,20 @@ export const Content = styled.div`
   align-items: flex-start;
 `;
 
-export const SignUpText = styled.div`
+export const SignUpWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  padding-top: 15vh;
+  padding-top: 20vh;
   padding-bottom: 5vh;
+  padding-left: 10vh;
+`;
+
+export const SignUpText = styled.div`
 
   h2 {
     padding-left: 7vw;
     font-weight: 500;
+    font-size: 20px;
   }
 
   @media screen and (max-width: 420px) {
@@ -221,7 +225,7 @@ export const LoginBtnLink = styled(Link)`
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  margin: 5vh 0 5vh 0;
+  margin: 3vh 0 5vh 0;
   height: 100%;
   width: 100%;
   border: none;

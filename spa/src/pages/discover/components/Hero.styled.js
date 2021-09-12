@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeroDescriptionWraper = styled.div`
+export const HeroDescriptionWrapper = styled.div`
   margin: 45px auto;
   width: 70%;
   display: flex;
@@ -35,12 +35,13 @@ export const HeroImg = styled.div`
   }
 `;
 
-export const HeroProsWraper = styled.div`
-  margin: 65px auto;
+export const HeroProsWrapper = styled.div`
+  margin: 90px auto;
   width: 85%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   @media only screen and (max-width: 420px) {
     flex-direction: column;
     width: 100%;
@@ -52,17 +53,20 @@ export const ProsItem = styled.div`
   img {
     width: 26%;
     margin-bottom: 10px;
+    
   }
 
   width: 28%;
   text-align: center;
 
   h3 {
+
     line-height: 25px;
   }
 
   h4 {
     line-height: 25px;
+
   }
 
   @media only screen and (max-width: 420px) {

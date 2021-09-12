@@ -26,14 +26,15 @@ export const allTours = [
         'numberOfReviews': "38",
         'numberOfStars': "3",
         'date': "2 PM Sunday, 12-10-2021",
-        'price': "17‎"
+        'price': "17‎",
+        'location': "Zagreb, Croatia"
     },
     {
         'id': 4,
         'src': "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/b1/6f/5e.jpg",
         'name': "Fast Track - Vatican Tour with Museums, Sistine Chapel & Raphael rooms",
-        'numberOfReviews': "20  ",
-        'numberOfStars': "",
+        'numberOfReviews': "20",
+        'numberOfStars': "4",
         'date': "10 AM Tuesday, 11-10-2021",
         'price': "14",
         'location': "Rome, Italy"
@@ -52,29 +53,30 @@ export const allTours = [
         'id': 6,
         'src': "https://i.pinimg.com/564x/ba/66/2e/ba662e64d431ea9cf507482f31fc6796.jpg",
         'name': "Fast Track - Vatican Tour with Museums, Sistine Chapel & Raphael rooms",
-        'numberOfReviews': "",
-        'numberOfStars': "",
+        'numberOfReviews': "54",
+        'numberOfStars': "5",
         'date': "11 AM Monday, 02-02-2021",
-        'price': "",
+        'price': "12",
         'location': "Rome, Italy"
     },
     {
         'id': 7,
         'src': "https://i.pinimg.com/564x/ad/30/3d/ad303d05ba23a24eaac6e8b0895d619a.jpg",
         'name': "Eiffel Tower Guided Climb Tour with Optional Summit Access",
+        'numberOfReviews': "18",
         'numberOfStars': "4",
         'date': "2 PM Wednesday, 10-09-2021",
-        'price': "",
+        'price': "14",
         'location': "Paris, France"
     },
     {
         'id': 8,
         'src': "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/b1/6f/5e.jpg",
         'name': "Fast Track - Vatican Tour with Museums, Sistine Chapel & Raphael rooms",
-        'numberOfReviews': "",
-        'numberOfStars': "",
+        'numberOfReviews': "4",
+        'numberOfStars': "2",
         'date': "12 AM Thursday, 11-09-2021",
-        'price': "",
+        'price': "15",
         'location': "Rome, Italy"
     },
 ]
