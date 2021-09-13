@@ -119,7 +119,7 @@ export const Container = styled.div`
 
 export const Title = styled.div`
   color: ${colors.TEXT_PRIMARY};
-  font-size: ${fontSizes.font18};
+  font-size: ${fontSizes.font19};
   font-weight: 700;
   text-align: center;
   margin: 100px 0 60px;
