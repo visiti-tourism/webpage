@@ -13,7 +13,7 @@ function FindTour() {
                 <FilterSection/>
                 <TourList/>
             </Wrapper>
-            <Footer></Footer>
+            <Footer bgColor='beige'></Footer>
         </div>
     );
 }

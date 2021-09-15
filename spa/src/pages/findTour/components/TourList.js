@@ -23,9 +23,8 @@ function TourList() {
     const handleLocationChange = (location) => {
         setSelectedLocation(location);
     };
-
     return (
-        <div>
+        <>
             <ListContainer>
                 <Banner>
                     <BannerText>
@@ -62,12 +61,13 @@ function TourList() {
                 </SearchBar>
                 <ToursWrapper>
                     {allTours.map(
-                        ({id, src, name, numberOfReviews, date, price}, index) => (
+                        ({id, src, name, numberOfReviews, numberOfStars, date, price}) => (
                             <TourItem
-                                index={id}
+                                key={id}
                                 src={src}
                                 name={name}
                                 numberOfReviews={numberOfReviews}
+                                numberOfStars={numberOfStars}
                                 date={date}
                                 price={price}
                             />
@@ -75,7 +75,7 @@ function TourList() {
                     )}
                 </ToursWrapper>
             </ListContainer>
-        </div>
+        </>
     );
 }
 

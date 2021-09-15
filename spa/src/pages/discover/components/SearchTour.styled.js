@@ -7,6 +7,7 @@ export const FindTourWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
   @media only screen and (max-width: 420px) {
     flex-direction: column;
     width: 85%;
@@ -22,6 +23,7 @@ export const Text = styled.div`
   margin: 0 15px;
   text-align: center;
   width: 270px;
+  
   @media only screen and (max-width: 420px) {
     width: 85%;
   }

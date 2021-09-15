@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {Link} from "react-router-dom";
-import {Container} from "../../App.styled";
 import {colors, fontSizes} from "../../constants/Styles";
+import {Container} from "../../App.styled";
 
 export const Nav = styled.nav`
   background: ${({beige}) => (beige ? colors.COLOR_BEIGE : colors.COLOR_WHITE)};
@@ -17,7 +17,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 85px;
   ${Container};
 
   h2 {
@@ -49,7 +49,7 @@ export const MobileIcon = styled.div`
     top: 14px;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: ${fontSizes.font18};
+    font-size: ${fontSizes.font19};
     color: ${colors.TEXT_PRIMARY};
     cursor: pointer;
   }
@@ -60,7 +60,8 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  padding: 0;
+  padding:0;
+  
   @media screen and (max-width: 420px) {
     display: flex;
     flex-direction: column;
@@ -93,6 +94,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavItemBtn = styled.li`
+
   @media screen and (max-width: 420px) {
     display: flex;
     justify-content: center;
@@ -107,7 +109,7 @@ export const NavLinks = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1.5rem;
   height: 100%;
   width: 100%;
 
@@ -132,6 +134,7 @@ export const NavLinks = styled(Link)`
     padding: 2rem;
     width: 100%;
     display: table;
+    
     &:hover {
       color: ${colors.COLOR_PRIMARY_100};
       transition: all 0.3s ease;
@@ -144,7 +147,7 @@ export const NavBtnLink = styled(Link)`
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 8px 4px;
   height: 100%;
   width: 100%;
   border: none;

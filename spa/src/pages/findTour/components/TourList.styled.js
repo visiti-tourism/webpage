@@ -5,7 +5,8 @@ export const Wrapper = styled.div`
   margin: 40px;
   display: flex;
   gap: 23px;
-  justify-content: space-between;
+  justify-content: center;
+  
 
   @media screen and (max-width: 420px) {
     flex-direction: column;
@@ -15,15 +16,16 @@ export const Wrapper = styled.div`
 `;
 
 export const ListContainer = styled.div`
-  width: 875px;
-  background-color: white;
+  width: 1075px;
   height: max-content;
   box-sizing: border-box;
   border-radius: 30px;
   padding: 17px 20px 100px;
+  background-color: ${colors.COLOR_WHITE};
+  
   @media screen and (max-width: 420px) {
     width: 80vw;
-    padding: 0px 10 0px;
+    padding: 0 10px 0 10px;
   }
 `;
 

@@ -8,7 +8,9 @@ export const FooterStyled = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 50px 0 35px 0;
+  padding: 50px 60px 35px 60px;
+  background: ${({beige}) => (beige ? colors.COLOR_BEIGE : colors.COLOR_WHITE)};
+  border-radius: 30px 30px 0 0;
 
   @media only screen and (max-width: 420px) {
     flex-direction: column;

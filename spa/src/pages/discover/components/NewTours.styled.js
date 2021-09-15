@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import {Button} from "../../../components/Button/Button.styled";
+
 
 export const NewToursWrapper = styled.div`
   width: 90%;
@@ -58,6 +60,10 @@ export const BigTourText = styled.div`
   h4 {
     margin-top: 22px;
   }
+`;
+
+export const BigTourTextButton = styled(Button)`
+  margin-right:35px;
 `;
 
 export const SmallTour = styled.div`

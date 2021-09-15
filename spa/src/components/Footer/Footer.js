@@ -1,11 +1,10 @@
 import React from "react";
-import {FooterStyled, IconSet, TextColumn, Divider} from "./Footer.styled";
+import {FooterStyled, IconSet, TextColumn} from "./Footer.styled";
 
-function Footer() {
+function Footer({bgColor}) {
     return (
         <>
-            <Divider></Divider>
-            <FooterStyled>
+            <FooterStyled beige={bgColor} >
                 <TextColumn>
                     <h5 style={{fontWeight: "500"}}>Social Media</h5>
                     <IconSet>
