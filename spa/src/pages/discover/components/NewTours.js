@@ -77,7 +77,7 @@ function NewTours() {
                     <BigTourText>
                         <div style={{display: "flex", justifyContent: "space-between"}}>
                             <div>
-                                <h6>A Tour of Bernini's Masterpieces </h6>
+                                <h3>A Tour of Bernini's Masterpieces </h3>
                                 <Location>
                                     <img src="images\icon-5-stars.svg" alt="5 stars"/>
                                     <h5>116 reviews</h5>

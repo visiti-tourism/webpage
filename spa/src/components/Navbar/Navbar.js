@@ -13,7 +13,7 @@ import {
     NavBtnLink,
 } from "./Navbar.styled";
 
-function Navbar({bgColor}) {
+function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
@@ -36,7 +36,7 @@ function Navbar({bgColor}) {
 
     return (
         <>
-            <Nav beige={bgColor}>
+            <Nav>
                 <NavbarContainer>
                     <NavLogo to="/" onClick={closeMobileMenu}>
                         <img src="images\logo-mono-text.svg" alt="visiti logo"/>

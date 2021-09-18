@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Wrapper, FilterMobile, FilterDesktop} from "./FilterSection.styled.js";
 import {Location} from "../../Discover/components/RecommendedTours.styled";
-import Filters from "./Filters";
+import FilterItems from "./FilterItems";
 
 
 function FilterSection() {
@@ -12,17 +12,17 @@ function FilterSection() {
         <Wrapper>
             <FilterDesktop>
                 <Location style={{margin: "35px auto"}}>
-                    <img src="images\icon-settings.svg" alt="5 stars"/>
-                    <h6>Filters</h6>
+                    <img src="images\icon-settings.svg" alt="Settings"/>
+                    <h3>Filters</h3>
                 </Location>
-                <Filters></Filters>
+                <FilterItems/>
             </FilterDesktop>
             <FilterMobile onClick={handleClick}>
                 <Location style={{margin: "35px auto"}}>
-                    <img src="images\icon-settings.svg" alt="5 stars"/>
+                    <img src="images\icon-settings.svg" alt="Settings"/>
                     <h6>Filters</h6>
                 </Location>
-                {click ? <Filters></Filters> : null}
+                {click ? <FilterItems/> : null}
             </FilterMobile>
         </Wrapper>
     );

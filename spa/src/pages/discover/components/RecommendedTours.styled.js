@@ -64,4 +64,8 @@ export const Location = styled.div`
   h5 {
     margin-left: 10px;
   }
+
+  h3 {
+    padding-bottom: 6px;
+  }
 `;

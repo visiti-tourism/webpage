@@ -8,12 +8,12 @@ import {MainContainer} from "./Profile.styled";
 function Profile() {
     return (
         <>
-            <Navbar></Navbar>
+            <Navbar/>
             <MainContainer>
-                <AccountInfo></AccountInfo>
-                <ToursContainer></ToursContainer>
+                <AccountInfo/>
+                <ToursContainer/>
             </MainContainer>
-            <Footer></Footer>
+            <Footer/>
         </>
     );
 }

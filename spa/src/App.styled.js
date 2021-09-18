@@ -30,19 +30,19 @@ export const StyledApp = styled.div`
 
     h2 {
       color: ${colors.TEXT_PRIMARY};
-      font-size: ${fontSizes.font14};
+      font-size: ${fontSizes.font19};
     }
 
     h3 {
       color: ${colors.TEXT_PRIMARY};
-      font-size: ${fontSizes.font14};
+      font-size: ${fontSizes.font16};
       line-height: 25px;
+      font-weight: 500;
     }
 
     h4 {
       color: ${colors.TEXT_SECONDARY};
       font-size: ${fontSizes.font14};
-      font-weight: 400;
       line-height: 25px;
     }
 
@@ -53,7 +53,7 @@ export const StyledApp = styled.div`
 
     h6 {
       color: ${colors.TEXT_PRIMARY};
-      font-size: ${fontSizes.font16};
+      font-size: ${fontSizes.font10};
       font-weight: 500;
     }
 
@@ -62,6 +62,12 @@ export const StyledApp = styled.div`
       font-size: ${fontSizes.font14};
       font-weight: 400;
       text-decoration: none;
+    }
+
+    img {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
     }
   }
 

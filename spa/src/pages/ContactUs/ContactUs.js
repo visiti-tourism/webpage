@@ -5,9 +5,9 @@ import React from "react";
 function ContactUs() {
     return (
         <>
-            <Navbar bgColor='beige'></Navbar>
-    <h1> Contact Us page</h1>
-            <Footer bgColor='beige'></Footer>
+            <Navbar/>
+            <h1> Contact Us page</h1>
+            <Footer/>
         </>
     );
 
