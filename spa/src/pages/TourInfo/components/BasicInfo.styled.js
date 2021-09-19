@@ -8,8 +8,6 @@ export const BasicInfoWrapper = styled.div`
   align-items: flex-start;
   justify-content: space-evenly;
   margin: 60px auto;
-  height: 900px;
-
 `;
 
 export const Location = styled.div`
