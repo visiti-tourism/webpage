@@ -31,6 +31,7 @@ export const StyledApp = styled.div`
     h2 {
       color: ${colors.TEXT_PRIMARY};
       font-size: ${fontSizes.font19};
+      font-weight: 500;
     }
 
     h3 {
@@ -62,6 +63,12 @@ export const StyledApp = styled.div`
       font-size: ${fontSizes.font14};
       font-weight: 400;
       text-decoration: none;
+    }
+    
+    span {
+      color: ${colors.TEXT_PRIMARY};
+      font-size: ${fontSizes.font14};
+      line-height: 25px;
     }
 
     img {

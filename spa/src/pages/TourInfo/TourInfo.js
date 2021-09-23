@@ -3,14 +3,24 @@ import Footer from "../../components/Footer/Footer";
 import React from "react";
 import BasicInfo from "./components/BasicInfo";
 import AdditionalInfo from "./components/AdditionalInfo";
+import Reviews from "./components/Reviews";
+import PriceOptions from "./components/PriceOptions";
+import {TourInfoWrapper} from "./components/TourInfo.styled";
+
 
 function TourInfo() {
     return (
         <>
+
             <Navbar/>
             <BasicInfo/>
-            <AdditionalInfo/>
+            <TourInfoWrapper>
+                <AdditionalInfo/>
+                <Reviews/>
+                <PriceOptions/>
+            </TourInfoWrapper>
             <Footer/>
+
         </>
     );
 }

@@ -19,36 +19,36 @@ function AdditionalInfo() {
                     small group size ensure<br/> an intimate experience.
                 </h4>
                 <h2>What's included</h2>
-                <div>{isLoggedIn ? <img src="images\checkbox-true.svg" alt="Checkbox True"/> :
-                    <img src="images\checkbox-true.svg" alt="Checkbox True"/>}
+                <div>{isLoggedIn ? <img src="images\checkbox-true.svg" alt="checkbox True"/> :
+                    <img src="images\checkbox-true.svg" alt="checkbox True"/>}
                     <h4>One-way private transfer</h4>
                 </div>
-                <div>{isLoggedIn ? <img src="images\checkbox-false.svg" alt="Checkbox False"/> :
-                    <img src="images\checkbox-true.svg" alt="Checkbox True"/>}
+                <div>{isLoggedIn ? <img src="images\checkbox-false.svg" alt="checkbox False"/> :
+                    <img src="images\checkbox-true.svg" alt="checkbox True"/>}
                     <h4>Meet and assist at your hotel</h4>
                 </div>
-                <div>{isLoggedIn ? <img src="images\checkbox-false.svg" alt="Checkbox False"/> :
-                    <img src="images\checkbox-true.svg" alt="Checkbox True"/>}
+                <div>{isLoggedIn ? <img src="images\checkbox-false.svg" alt="checkbox False"/> :
+                    <img src="images\checkbox-true.svg" alt="checkbox True"/>}
                     <h4>1 to 8 people transferred in a private vehicle</h4>
                 </div>
-                <div>{isLoggedIn ? <img src="images\checkbox-true.svg" alt="Checkbox True"/> :
-                    <img src="images\checkbox-true.svg" alt="Checkbox True"/>}
+                <div>{isLoggedIn ? <img src="images\checkbox-true.svg" alt="checkbox True"/> :
+                    <img src="images\checkbox-true.svg" alt="checkbox True"/>}
                     <h4>Private Tranportation</h4>
                 </div>
-                <div>{isLoggedIn ? <img src="images\checkbox-true.svg" alt="Checkbox True"/> :
-                    <img src="images\checkbox-true.svg" alt="Checkbox True"/>}
+                <div>{isLoggedIn ? <img src="images\checkbox-true.svg" alt="checkbox True"/> :
+                    <img src="images\checkbox-true.svg" alt="checkbox True"/>}
                     <h4>Driver will assist with the luggages</h4>
                 </div>
-                <div>{isLoggedIn ? <img src="images\checkbox-false.svg" alt="Checkbox False"/> :
-                    <img src="images\checkbox-true.svg" alt="Checkbox True"/>}
+                <div>{isLoggedIn ? <img src="images\checkbox-false.svg" alt="checkbox False"/> :
+                    <img src="images\checkbox-true.svg" alt="checkbox True"/>}
                     <h4>Drop off by the ship</h4>
                 </div>
-                <div>{isLoggedIn ? <img src="images\checkbox-true.svg" alt="Checkbox True"/> :
-                    <img src="images\checkbox-true.svg" alt="Checkbox True"/>}
+                <div>{isLoggedIn ? <img src="images\checkbox-true.svg" alt="checkbox True"/> :
+                    <img src="images\checkbox-true.svg" alt="checkbox True"/>}
                     <h4>Gratuities</h4>
                 </div>
-                <div>{isLoggedIn ? <img src="images\checkbox-true.svg" alt="Checkbox True"/> :
-                    <img src="images\checkbox-true.svg" alt="Checkbox True"/>}
+                <div>{isLoggedIn ? <img src="images\checkbox-true.svg" alt="checkbox True"/> :
+                    <img src="images\checkbox-true.svg" alt="checkbox True"/>}
                     <h4>Excess luggage charges (where applicable)</h4>
                 </div>
                 <h2>Departure and return</h2>

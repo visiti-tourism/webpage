@@ -1,7 +1,18 @@
 import styled from "styled-components";
-import {Link} from "react-router-dom";
 import {colors} from "../../../constants/Styles";
+import {Button} from "../../../components/Button/Button.styled";
+import Checkbox from '@mui/material/Checkbox';
 
+export const CheckboxIcon = styled(Checkbox)`
+
+  &:hover {
+    background-color: unset !important;
+  }
+
+  &.Mui-hover {
+
+  }
+`;
 
 export const BasicInfoWrapper = styled.div`
   display: flex;
@@ -63,16 +74,20 @@ export const Price = styled.div`
   margin-bottom: 30px;
 
   h2 {
-    font-weight: 500;
     margin-left: 10px;
   }
 `;
 
-export const BuyBtnLink = styled(Link)`
+export const BuyBtnLink = styled(Button)`
   margin-right: 20px;
+  height: auto;
+  padding: 13px 50px;
 `;
 
-export const SeePriceBtnLink = styled(Link)`
+export const SeePriceBtnLink = styled(Button)`
+  height: auto;
+  padding: 13px 35px;
+  margin-right: 10px;
 `;
 
 export const BasicInfoSliderWrapper = styled.div`

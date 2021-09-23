@@ -1,14 +1,13 @@
 import styled from "styled-components";
-import {colors, fontSizes} from "../../../constants/Styles";
+import {colors} from "../../../constants/Styles";
 
 export const AdditionalInfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 60px auto 60px 400px;
+  margin: 60px auto 60px 65px;
 
   h2 {
-    font-weight: 500;
     margin: 30px 0 25px 0;
   }
 
@@ -33,19 +32,20 @@ export const AdditionalInfoWrapper = styled.div`
     li {
       color: ${colors.TEXT_SECONDARY};
       margin: 0;
+
+      h4 {
+        margin-left: 5px;
+      }
     }
   }
-
 `;
 
 export const SubTitle = styled.span`
   display: flex;
-  color: ${colors.TEXT_PRIMARY};
-  font-size: ${fontSizes.font14};
-  line-height: 25px;
-
+  
   h4 {
     margin-left: 5px;
   }
+
 `;
 

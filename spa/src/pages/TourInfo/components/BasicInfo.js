@@ -7,11 +7,11 @@ import {
     Reviews,
     Tags,
     Price,
-    SeePriceBtnLink, BuyBtnLink,
+    SeePriceBtnLink, BuyBtnLink, CheckboxIcon,
 } from "./BasicInfo.styled";
-import {Button} from "../../../components/Button/Button.styled";
 import ImageGallerySlider from "./ImageGallerySlider";
-
+import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
+import Favorite from '@mui/icons-material/Favorite';
 
 function BasicInfo() {
     return (
@@ -37,15 +37,14 @@ function BasicInfo() {
                         <img src="images\icon-wallet.svg" alt="wallet"/>
                         <h2>From 10 €</h2>
                     </Price>
-                        <BuyBtnLink>
-                            <Button primary htmlType="submit" fontBig>Buy</Button>
-                        </BuyBtnLink>
-                        <SeePriceBtnLink>
-                            <Button htmlType="submit" fontBig>See prices</Button>
-                        </SeePriceBtnLink>
+                    <BuyBtnLink primary htmlType="submit" fontBig>Buy</BuyBtnLink>
+                    <SeePriceBtnLink htmlType="submit" fontBig>See prices</SeePriceBtnLink>
+                    <CheckboxIcon icon={<FavoriteBorder fontSize="large" style={{color: "#FE862C"}}/>}
+                                  checkedIcon={<Favorite fontSize="large" style={{color: "#FE862C"}}/>}
+                    />
                 </BasicInfoDescription>
                 <BasicInfoSliderWrapper>
-                    <ImageGallerySlider></ImageGallerySlider>
+                    <ImageGallerySlider/>
                 </BasicInfoSliderWrapper>
             </BasicInfoWrapper>
         </>
