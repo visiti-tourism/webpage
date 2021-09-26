@@ -23,6 +23,7 @@ class Excursion(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField(max_length=1000, default="None")
     country = models.ForeignKey(Country, on_delete=models.CASCADE, default=1)
+    price = models.IntegerField()
     city = models.ForeignKey(City, on_delete=models.CASCADE, default=1)
     start_time = models.DateTimeField(auto_now=False, auto_now_add=False, default=datetime.now)
     end_time = models.DateTimeField(auto_now=False, auto_now_add=False, default=datetime.now)
@@ -33,4 +34,3 @@ class Excursion(models.Model):
 
     def get_absolute_url(self):
         return reverse('excursion-detail', kwargs={'pk': self.pk})
-

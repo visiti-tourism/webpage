@@ -7,7 +7,7 @@ class ExcursionSerializer(serializers.ModelSerializer):
         model = Excursion
         fields = ('id',
                   'name',
-                  'places',
+                  'start_time',
                   'price',
-                  'duration',
-                  'comment')
+                  'end_time',
+                  'image_title')
