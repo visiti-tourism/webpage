@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   display: flex;
   gap: 23px;
   justify-content: center;
-  
+
   @media screen and (max-width: 420px) {
     flex-direction: column;
     justify-content: center;
@@ -24,7 +24,7 @@ export const ListContainer = styled.div`
 
   @media screen and (max-width: 420px) {
     width: 80vw;
-    padding: 0 10px 0 10px;
+    padding: 18px 10px 0 10px;
   }
 `;
 

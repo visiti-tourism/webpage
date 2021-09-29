@@ -2,20 +2,20 @@ import React, {useState} from "react";
 import axios from 'axios';
 import {Link} from "react-router-dom";
 import {Button} from "../../components/Button/Button.styled";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faChevronLeft} from '@fortawesome/free-solid-svg-icons'
 import {
     BackgroundWrapper,
     Content,
     ContentImg,
     ContentWrapper,
     DontHaveAcc,
-    GoogleButton,
+    GoogleButton, HrWrapper,
     LoginBtnLink,
     SignInInputs,
     SignInText, SignInWrapper,
     StyledInput
 } from "./SignIn.styled";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 function SignIn() {
     const [user, setUser] = useState(
@@ -58,12 +58,10 @@ function SignIn() {
 
     return (
         <>
+            <Navbar/>
             <BackgroundWrapper>
                 <ContentWrapper>
                     <SignInWrapper>
-                        <Link to="/">
-                            <FontAwesomeIcon icon={faChevronLeft} size="2x"/>
-                        </Link>
                         <SignInText>
                             <h2>Log in</h2>
                         </SignInText>
@@ -74,7 +72,11 @@ function SignIn() {
                                 <GoogleButton><img src="/images/icon-google.svg" alt="google icon"></img> Sign In with
                                     Google</GoogleButton>
                             </a>
-                            <hr data-content="OR"></hr>
+                            <HrWrapper>
+                                <hr/>
+                                <h4>OR</h4>
+                                <hr/>
+                            </HrWrapper>
                             <label>Email address</label>
                             <StyledInput value={user.email} type="email" onChange={handleChange}
                                          name="email"></StyledInput>
@@ -97,6 +99,7 @@ function SignIn() {
                     </Content>
                 </ContentWrapper>
             </BackgroundWrapper>
+            <Footer/>
         </>
     );
 }

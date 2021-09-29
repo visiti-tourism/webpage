@@ -1,18 +1,21 @@
 import styled from "styled-components"
 
-export const UserImg = styled.div`
-
-  @media screen and (max-width: 420px) {
-  }
-`;
-
 export const AccountInfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   @media screen and (max-width: 420px) {
+
   }
 `;
+
+export const UserImg = styled.div`
+
+  @media screen and (max-width: 420px) {
+    padding-left: 30px;
+  }
+`;
+
 export const UserName = styled.div`
   display: flex;
   justify-content: space-between;
@@ -24,6 +27,7 @@ export const UserName = styled.div`
   }
 
   @media screen and (max-width: 420px) {
+    padding-left: 30px;
   }
 `;
 

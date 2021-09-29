@@ -16,7 +16,7 @@ export const FooterStyled = styled.div`
     flex-direction: column;
     text-align: center;
     gap: 10px;
-    padding: 25px 0 15px;
+    padding:25px 0 15px 50px;
     height: max-content;
   }
 `;

@@ -60,8 +60,8 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  padding:0;
-  
+  padding: 0;
+
   @media screen and (max-width: 420px) {
     display: flex;
     flex-direction: column;
@@ -134,7 +134,7 @@ export const NavLinks = styled(Link)`
     padding: 2rem;
     width: 100%;
     display: table;
-    
+
     &:hover {
       color: ${colors.COLOR_PRIMARY_100};
       transition: all 0.3s ease;

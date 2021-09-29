@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 420px) {
     width: 80vw;
     margin: 0 auto;
+    padding-bottom: 5vh;
   }
 `;
 

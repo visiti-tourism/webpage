@@ -11,6 +11,7 @@ import {
     BigTourText, BigTourTextButton,
 } from "./NewTours.styled.js";
 import {Title} from "../../../App.styled";
+import {Button} from "../../../components/Button/Button.styled";
 
 function NewTours() {
     return (
@@ -83,7 +84,7 @@ function NewTours() {
                                     <h5>116 reviews</h5>
                                 </Location>
                             </div>
-                            <BigTourTextButton>More</BigTourTextButton>
+                            <Button>More</Button>
                         </div>
                         <h4>
                             The works of the sculptor and architect Gian Lorenzo Bernini can
