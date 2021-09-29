@@ -2,7 +2,7 @@ import React from "react";
 import {
     DescriptionItemsWrapper,
     PriceOptionsBtnWrapper,
-    PriceOptionsWrapper, PriceTitle
+    PriceOptionsWrapper, PriceTitle, SelectBtn, SelectBtnWrapper, TitleWrapper,
 } from "./PriceOptions.styled";
 import {LargeButton} from "../../../components/Button/LargeButton.styled";
 
@@ -11,12 +11,12 @@ function PriceOptions() {
     return (
         <>
             <PriceOptionsWrapper>
-                <div>
+                <TitleWrapper>
                     <h3>Price Options</h3>
                     <br/>
                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ac dictum tellus diam.
                         Quam tortor diam massa nec eu lobortis eget<br/> aenean. Aliquam nas</h4>
-                </div>
+                </TitleWrapper>
                 <PriceOptionsBtnWrapper>
                     <LargeButton>
                         <h3>Individual</h3>
@@ -73,6 +73,9 @@ function PriceOptions() {
                         <PriceTitle>10€<span> /person</span></PriceTitle>
                     </LargeButton>
                 </PriceOptionsBtnWrapper>
+                <SelectBtnWrapper>
+                    <SelectBtn primary htmlType="submit" fontBig>Select</SelectBtn>
+                </SelectBtnWrapper>
             </PriceOptionsWrapper>
         </>
     );

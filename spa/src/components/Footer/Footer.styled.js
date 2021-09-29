@@ -35,6 +35,7 @@ export const TextColumn = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-right:50px;
 `;
 
 export const Divider = styled.div`

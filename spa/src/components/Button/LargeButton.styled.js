@@ -19,4 +19,8 @@ export const LargeButton = styled.button`
   h3 {
     margin-bottom: 5px;
   }
+  
+  span {
+    color: ${colors.TEXT_PRIMARY};
+  }
 `;

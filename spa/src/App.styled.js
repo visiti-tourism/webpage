@@ -66,7 +66,6 @@ export const StyledApp = styled.div`
     }
     
     span {
-      color: ${colors.TEXT_PRIMARY};
       font-size: ${fontSizes.font14};
       line-height: 25px;
     }
