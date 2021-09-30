@@ -71,7 +71,7 @@ ValueLabelComponent.propTypes = {
     value: PropTypes.number.isRequired,
 };
 
-function CustomizedSlider() {
+function PriceSlider() {
 
     const classes = useStyles();
     const [priceRange, setPriceRange] = useState([0, 100]);
@@ -125,4 +125,4 @@ function CustomizedSlider() {
     );
 }
 
-export default CustomizedSlider;
+export default PriceSlider;

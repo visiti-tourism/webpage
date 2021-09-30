@@ -5,7 +5,7 @@ import {
     MultiSelect,
     Option,
 } from "react-rainbow-components";
-import CustomizedSlider from "./CustomSlider";
+import PriceSlider from "./PriceSlider";
 import {Application} from "react-rainbow-components";
 import {theme} from "../../../constants/Styles";
 
@@ -48,7 +48,7 @@ const optionsCurrency = [
     {value: "UAH", label: "UAH"},
 ];
 
-function Filters() {
+function FilterItems() {
     const [currency, setCurrency] = useState("USD");
 
     const handleCurrencyChange = (event) => {
@@ -75,7 +75,7 @@ function Filters() {
                     value={currency}
                     onChange={handleCurrencyChange}
                 />
-                <CustomizedSlider></CustomizedSlider>
+                <PriceSlider/>
             </div>
             <div className="rainbow-align-content_left  rainbow-m-left_large ">
                 <CheckboxGroup
@@ -143,5 +143,5 @@ function Filters() {
         ;
 }
 
-export default Filters;
+export default FilterItems;
     

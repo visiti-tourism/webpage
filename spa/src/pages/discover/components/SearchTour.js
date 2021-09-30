@@ -7,7 +7,7 @@ function SearchTour() {
         <FindTourWrapper>
             <img src="images\icon-zoom.svg" alt="illustration"/>
             <Text>
-                <h3 style={{fontWeight: "500"}}>Find your perfect tour!</h3>
+                <h3>Find your perfect tour!</h3>
                 <h4>
                     Pick location and use parametrized search to find the best proposals{" "}
                 </h4>

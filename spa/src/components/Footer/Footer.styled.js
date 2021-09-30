@@ -9,14 +9,14 @@ export const FooterStyled = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 50px 60px 35px 60px;
-  background: ${({beige}) => (beige ? colors.COLOR_BEIGE : colors.COLOR_WHITE)};
+  background: ${colors.COLOR_BEIGE};
   border-radius: 30px 30px 0 0;
 
   @media only screen and (max-width: 420px) {
     flex-direction: column;
     text-align: center;
     gap: 10px;
-    padding: 25px 0 15px;
+    padding:25px 0 15px 50px;
     height: max-content;
   }
 `;
@@ -35,6 +35,7 @@ export const TextColumn = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-right:50px;
 `;
 
 export const Divider = styled.div`

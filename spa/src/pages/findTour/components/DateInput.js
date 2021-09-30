@@ -1,7 +1,7 @@
 import React from "react";
 import {DatePicker} from "react-rainbow-components";
 
-function CustomDatePicker({label}) {
+function DateInput({label}) {
     const [selectedDate, setSelectedDate] = React.useState(
         new Date("01/13/2020 12:12")
     );
@@ -22,4 +22,4 @@ function CustomDatePicker({label}) {
     );
 }
 
-export default CustomDatePicker;
+export default DateInput;

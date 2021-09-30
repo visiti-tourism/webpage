@@ -19,7 +19,7 @@ export const colors = {
     COLOR_BEIGE: "#F9E6D8",
     COLOR_BEIGE_LIGHT: "#F9F5F2",
     COLOR_BORDER_LIGHT: "#EBF0FF",
-    COLOR_BORDER_PRIMARY: "#E0E0E0"
+    COLOR_BORDER_PRIMARY: "#E0E0E0",
 };
 
 export const theme = {

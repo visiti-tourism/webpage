@@ -1,22 +1,28 @@
 import styled from "styled-components"
 import {Link} from "react-router-dom";
+import {colors} from "../../constants/Styles";
 
 export const BackgroundWrapper = styled.div`
   display: flex;
   justify-content: center;
   background-color: #F9F5F2;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   @media screen and (max-width: 420px) {
-    background-color: white;
+    height: 90vh;
   }
 `;
 
 export const ContentWrapper = styled.div`
   background-color: white;
   width: 90%;
-  height: 92vh;
-  border-radius: 0 0 50px 50px;
+  border-radius: 30px;
+  margin: 5vh 0;
+
+  @media screen and (max-width: 420px) {
+    background-color: ${colors.COLOR_BEIGE_LIGHT};
+    margin: 0;
+  }
 `;
 
 export const Content = styled.div`
@@ -28,9 +34,26 @@ export const Content = styled.div`
 export const SignInWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
-  padding-top: 20vh;
-  padding-bottom: 5vh;
-  padding-left: 10vh;
+  padding: 14vh 0 5vh 10vh;
+
+  @media screen and (max-width: 420px) {
+    padding: 15vh 0 5vh 17vh;
+  }
+
+`;
+
+export const HrWrapper = styled.div`
+  display: flex;
+  width: 370px;
+  align-items: center;
+
+  h4 {
+    padding: 0 5px;
+  }
+
+  @media screen and (max-width: 420px) {
+    width: 270px;
+  }
 `;
 
 export const SignInText = styled.div`
@@ -39,10 +62,9 @@ export const SignInText = styled.div`
     font-weight: 500;
     font-size: 20px;
   }
-  
+
   @media screen and (max-width: 420px) {
     justify-content: center;
-    padding-top: 15vh;
     h2 {
       padding: 0;
     }

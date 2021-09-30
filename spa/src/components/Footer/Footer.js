@@ -1,28 +1,28 @@
 import React from "react";
 import {FooterStyled, IconSet, TextColumn} from "./Footer.styled";
 
-function Footer({bgColor}) {
+function Footer() {
     return (
         <>
-            <FooterStyled beige={bgColor} >
+            <FooterStyled>
                 <TextColumn>
-                    <h5 style={{fontWeight: "500"}}>Social Media</h5>
+                    <h4 style={{fontWeight: "500"}}>Social Media</h4>
                     <IconSet>
                         <img src="\images\icon-instagram.svg" alt="imstagtram icon"></img>
                         <img src="\images\icon-facebook.svg" alt="facebook icon"></img>
                         <img src="\images\icon-telegram.svg" alt="telegram icon"></img>
                     </IconSet>
-                    <h5>© Copyright ipsum dolor Lore </h5>
+                    <h4>© Copyright ipsum dolor Lore </h4>
                 </TextColumn>
                 <TextColumn>
-                    <h5 style={{fontWeight: "500"}}>Lorem ipsum dolor</h5>
-                    <h5>Lorem ipsum dolor</h5>
-                    <h5>Lorem ipsum dolor</h5>
+                    <h4 style={{fontWeight: "500"}}>Lorem ipsum dolor</h4>
+                    <h4>Lorem ipsum dolor</h4>
+                    <h4>Lorem ipsum dolor</h4>
                 </TextColumn>
                 <TextColumn>
-                    <h5 style={{fontWeight: "500"}}>Lorem ipsum dolor</h5>
-                    <h5>FAQ</h5>
-                    <h5>Privacy policy</h5>
+                    <h4 style={{fontWeight: "500"}}>Lorem ipsum dolor</h4>
+                    <h4>FAQ</h4>
+                    <h4>Privacy policy</h4>
                 </TextColumn>
             </FooterStyled>
         </>

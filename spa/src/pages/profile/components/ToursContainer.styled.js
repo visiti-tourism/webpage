@@ -43,7 +43,6 @@ export const ListItemsWrapper = styled.div`
 
 
 export const TourItem = styled.div`
-
   margin-right: 75px;
   @media screen and (max-width: 420px) {
     display: flex;
@@ -54,7 +53,7 @@ export const TourItem = styled.div`
   }
 `;
 export const TourItemImg = styled.div`
-  background-color: #F9F5F2;
+  background-color: orange;
   width: 233px;
   height: 156px;
   border-radius: 15px;
@@ -63,7 +62,7 @@ export const TourItemImg = styled.div`
   }
 `;
 export const TourItemTitle = styled.h2`
-  padding: 15px 0 0px 5px;
+  padding: 15px 0 0 5px;
   width: 220px;
   @media screen and (max-width: 420px) {
     padding: 5px 0 0 5px;

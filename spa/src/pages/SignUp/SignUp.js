@@ -2,8 +2,6 @@ import React, {useState} from "react";
 import axios from 'axios';
 import {Link} from "react-router-dom";
 import {Button} from "../../components/Button/Button.styled";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faChevronLeft} from '@fortawesome/free-solid-svg-icons'
 import {
     ContentImg,
     SignUpText,
@@ -16,6 +14,9 @@ import {
     LoginBtnLink,
     StyledInput, SignUpWrapper
 } from "./SignUp.styled";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import {HrWrapper} from "./SignUp.styled";
 
 function SignUp() {
     const [user, setUser] = useState(
@@ -56,12 +57,10 @@ function SignUp() {
     };
     return (
         <>
+            <Navbar/>
             <BackgroundWrapper>
                 <ContentWrapper>
                     <SignUpWrapper>
-                        <Link to="/">
-                            <FontAwesomeIcon icon={faChevronLeft} size="2x"/>
-                        </Link>
                         <SignUpText>
                             <h2>Create Account</h2>
                         </SignUpText>
@@ -73,7 +72,11 @@ function SignUp() {
                                 <GoogleButton><img src="/images/icon-google.svg" alt="google icon"></img> Sign Up with
                                     Google</GoogleButton>
                             </a>
-                            <hr data-content="OR"></hr>
+                            <HrWrapper>
+                                <hr/>
+                                <h4>OR</h4>
+                                <hr/>
+                            </HrWrapper>
                             <label>Email address</label>
                             <StyledInput value={user.email} type="email" onChange={handleChange}
                                          name="email"></StyledInput>
@@ -97,6 +100,7 @@ function SignUp() {
                     </Content>
                 </ContentWrapper>
             </BackgroundWrapper>
+            <Footer/>
         </>
     );
 }

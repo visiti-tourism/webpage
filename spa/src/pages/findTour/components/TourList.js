@@ -1,5 +1,5 @@
 import React from "react";
-import CustomDatePicker from "./CustomDatePicker";
+import DateInput from "./DateInput";
 import {
     ListContainer,
     Banner,
@@ -39,7 +39,7 @@ function TourList() {
                 </Banner>
                 <SearchBar>
                     <Application theme={theme}>
-                        <h6>Search results for: </h6>
+                        <h3>Search results for: </h3>
                         <div className="rainbow-align-content_space-between rainbow-m-top_medium">
                             <Picklist
                                 id="picklist-1"
@@ -54,8 +54,8 @@ function TourList() {
                                 <Option name="option 2" label="Empire State"/>
                                 <Option name="option 3" label="Central Park"/>
                             </Picklist>
-                            <CustomDatePicker label="From date: "></CustomDatePicker>
-                            <CustomDatePicker label="To date: "></CustomDatePicker>
+                            <DateInput label="From Date "/>
+                            <DateInput label="To Date "/>
                         </div>
                     </Application>
                 </SearchBar>

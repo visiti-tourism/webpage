@@ -6,7 +6,6 @@ export const Wrapper = styled.div`
   display: flex;
   gap: 23px;
   justify-content: center;
-  
 
   @media screen and (max-width: 420px) {
     flex-direction: column;
@@ -22,10 +21,10 @@ export const ListContainer = styled.div`
   border-radius: 30px;
   padding: 17px 20px 100px;
   background-color: ${colors.COLOR_WHITE};
-  
+
   @media screen and (max-width: 420px) {
     width: 80vw;
-    padding: 0 10px 0 10px;
+    padding: 18px 10px 0 10px;
   }
 `;
 
@@ -56,6 +55,10 @@ export const BannerText = styled.div`
   justify-content: space-between;
   width: 70%;
   margin-top: -10px;
+
+  h3 {
+    margin-bottom: 10px;
+  }
 
   h6 {
     font-weight: 400;
@@ -94,11 +97,12 @@ export const SearchBarInputs = styled.div`
 `;
 
 export const ToursWrapper = styled.div`
-  margin: 80px auto 20px;
+  margin: 60px 20px 20px;
   width: 87%;
   display: flex;
   flex-direction: column;
   gap: 44px;
+
   @media only screen and (max-width: 420px) {
     margin: 20px auto 0;
   }
