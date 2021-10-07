@@ -18,11 +18,12 @@ import {
 import {theme} from "../../../constants/Styles";
 
 function TourList() {
-    const [selectedLocation, setSelectedLocation] = React.useState("");
+    const [selectedLocation, setSelectedLocation] = React.useState({});
 
     const handleLocationChange = (location) => {
         setSelectedLocation(location);
-    };
+    }
+
     return (
         <>
             <ListContainer>
@@ -47,12 +48,13 @@ function TourList() {
                                 value={selectedLocation}
                                 onChange={handleLocationChange}
                                 label="Select Location"
-                                labelAlignment="left"
-                            >
+                                labelAlignment="left">
+
                                 <Option name="header" label="Your Buildings" variant="header"/>
                                 <Option name="option 1" label="Experimental Building"/>
                                 <Option name="option 2" label="Empire State"/>
                                 <Option name="option 3" label="Central Park"/>
+
                             </Picklist>
                             <DateInput label="From Date "/>
                             <DateInput label="To Date "/>

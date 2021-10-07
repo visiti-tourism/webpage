@@ -24,7 +24,7 @@ export const ListContainer = styled.div`
 
   @media screen and (max-width: 420px) {
     width: 80vw;
-    padding: 18px 10px 0 10px;
+    padding: 18px 10px;
   }
 `;
 

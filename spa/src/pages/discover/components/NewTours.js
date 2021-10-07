@@ -8,7 +8,7 @@ import {
     SmallTourText,
     Location,
     BigTourImg,
-    BigTourText, BigTourTextButton,
+    BigTourText,
 } from "./NewTours.styled.js";
 import {Title} from "../../../App.styled";
 import {Button} from "../../../components/Button/Button.styled";
