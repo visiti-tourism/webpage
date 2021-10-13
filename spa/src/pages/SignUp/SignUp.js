@@ -9,10 +9,11 @@ import {
     SignUpInputs,
     DontHaveAcc,
     GoogleButton,
-    BackgroundWrapper,
-    ContentWrapper,
     LoginBtnLink,
-    StyledInput, SignUpWrapper
+    StyledInput,
+    SignUpWrapper,
+    SignUpBackgroundWrapper,
+    SignUpContentWrapper,
 } from "./SignUp.styled";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
@@ -23,7 +24,7 @@ function SignUp() {
         {
             email: '',
             username: '',
-            password: ''
+            password: '',
         }
     );
     const handleChange = e => {
@@ -38,7 +39,7 @@ function SignUp() {
         const payload = {
             "email": user.email,
             "username": user.username,
-            "password": user.password
+            "password": user.password,
         }
         console.log(user);
         axios.post(apiBaseUrl, payload)
@@ -58,8 +59,8 @@ function SignUp() {
     return (
         <>
             <Navbar/>
-            <BackgroundWrapper>
-                <ContentWrapper>
+            <SignUpBackgroundWrapper>
+                <SignUpContentWrapper>
                     <SignUpWrapper>
                         <SignUpText>
                             <h2>Create Account</h2>
@@ -98,8 +99,8 @@ function SignUp() {
                             <img src="images/illustration-1.svg" alt="illustration"/>
                         </ContentImg>
                     </Content>
-                </ContentWrapper>
-            </BackgroundWrapper>
+                </SignUpContentWrapper>
+            </SignUpBackgroundWrapper>
             <Footer/>
         </>
     );

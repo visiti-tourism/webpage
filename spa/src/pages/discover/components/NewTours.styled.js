@@ -13,18 +13,22 @@ export const NewToursWrapper = styled.div`
 export const NewToursLayoutSmall = styled.div`
   width: 42%;
   margin-right: 10%;
+  
   @media only screen and (max-width: 420px) {
     width: 90%;
     margin: 35px auto 0;
   }
+  
 `;
 
 export const NewToursLayoutBig = styled.div`
   width: 58%;
+  
   @media only screen and (max-width: 420px) {
     width: 90%;
     margin: 0 auto;
   }
+  
 `;
 
 export const BigTourImg = styled.div`

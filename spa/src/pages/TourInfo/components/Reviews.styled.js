@@ -55,8 +55,10 @@ export const ReviewGraphicWrapper = styled.div`
 
 export const LoadMoreBtnWrapper = styled.div`
   margin-top: 25px;
+  
   h3 {
     text-align: center;
     color: ${colors.COLOR_PRIMARY_100};
   }
+  
 `;
