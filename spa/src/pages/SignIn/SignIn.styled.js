@@ -1,24 +1,17 @@
 import styled from "styled-components"
 import {Link} from "react-router-dom";
 import {colors} from "../../constants/Styles";
+import {BackgroundWrapper, ContentWrapper} from "../../App.styled";
 
-export const BackgroundWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  background-color: #F9F5F2;
-  width: 100%;
+export const SignInBackgroundWrapper = styled(BackgroundWrapper)`
   height: 95vh;
   @media screen and (max-width: 420px) {
     height: 90vh;
   }
 `;
 
-export const ContentWrapper = styled.div`
-  background-color: white;
+export const SignInContentWrapper = styled(ContentWrapper)`
   width: 90%;
-  border-radius: 30px;
-  margin: 5vh 0;
-
   @media screen and (max-width: 420px) {
     background-color: ${colors.COLOR_BEIGE_LIGHT};
     margin: 0;

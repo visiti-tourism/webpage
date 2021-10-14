@@ -92,34 +92,33 @@ function PriceSlider() {
         <div className={classes.root}>
             <PrettoSlider
                 valueLabelDisplay="auto"
-                aria-label=" range-slider pretto slider"
                 defaultValue={[0, 100]}
                 getAriaLabel={(index) =>
                     index === 0 ? "Minimum price" : "Maximum price"
                 }
                 value={priceRange}
-                onChange={onRangeChange}
-            />
+                onChange={onRangeChange}/>
+
             <div
                 style={{width: "76%", margin: "0 auto 20px"}}
-                className="rainbow-flex rainbow-m-bottom_medium "
-            >
+                className="rainbow-flex rainbow-m-bottom_medium">
+
                 <CounterInput
                     label="min"
                     style={{width: "110px"}}
                     className=" rainbow-m_auto"
                     labelAlignment="center"
                     value={priceRange[0]}
-                    onChange={onRangeChangeMin}
-                />
+                    onChange={onRangeChangeMin}/>
+
                 <CounterInput
                     label="max"
                     style={{width: "110px"}}
                     className=" rainbow-m_auto"
                     labelAlignment="center"
                     value={priceRange[1]}
-                    onChange={onRangeChangeMax}
-                />
+                    onChange={onRangeChangeMax}/>
+
             </div>
         </div>
     );

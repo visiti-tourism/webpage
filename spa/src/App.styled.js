@@ -123,10 +123,25 @@ export const Container = styled.div`
   margin-left: auto;
   padding-right: 50px;
   padding-left: 50px;
+  
   @media screen and (max-width: 420px) {
     padding-right: 30px;
     padding-left: 30px;
   }
+  
+`;
+
+export const BackgroundWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  background-color: #F9F5F2;
+  width: 100%;
+`;
+
+export const ContentWrapper = styled.div`
+  background-color: white;
+  border-radius: 30px;
+  margin: 5vh 0;
 `;
 
 export const Title = styled.div`
@@ -135,8 +150,11 @@ export const Title = styled.div`
   font-weight: 700;
   text-align: center;
   margin: 100px 0 60px;
+  
   @media only screen and (max-width: 420px) {
     font-size: ${fontSizes.font16};
     margin: 50px 0 30px;
   }
+  
 `;
+

@@ -3,15 +3,17 @@ import axios from 'axios';
 import {Link} from "react-router-dom";
 import {Button} from "../../components/Button/Button.styled";
 import {
-    BackgroundWrapper,
     Content,
     ContentImg,
-    ContentWrapper,
     DontHaveAcc,
-    GoogleButton, HrWrapper,
+    GoogleButton,
+    HrWrapper,
     LoginBtnLink,
+    SignInBackgroundWrapper,
+    SignInContentWrapper,
     SignInInputs,
-    SignInText, SignInWrapper,
+    SignInText,
+    SignInWrapper,
     StyledInput
 } from "./SignIn.styled";
 import Navbar from "../../components/Navbar/Navbar";
@@ -20,22 +22,19 @@ import Footer from "../../components/Footer/Footer";
 function SignIn() {
     const [user, setUser] = useState(
         {
-            username: '',
-            password: ''
+            email: '',
+            password: '',
         }
     );
     const handleChange = e => {
         const {name, value} = e.target;
-        setUser(prevState => ({
-            ...prevState,
-            [name]: value
-        }));
+        setUser(prevState => ({...prevState, [name]: value}));
     }
     const handleClick = () => {
         const apiBaseUrl = "http://127.0.0.1:8000/auth/jwt/create/";
         const payload = {
-            "username": user.username,
-            "password": user.password
+            "email": user.email,
+            "password": user.password,
         };
         console.log(user);
         axios.post(apiBaseUrl, payload)
@@ -59,8 +58,8 @@ function SignIn() {
     return (
         <>
             <Navbar/>
-            <BackgroundWrapper>
-                <ContentWrapper>
+            <SignInBackgroundWrapper>
+                <SignInContentWrapper>
                     <SignInWrapper>
                         <SignInText>
                             <h2>Log in</h2>
@@ -97,8 +96,8 @@ function SignIn() {
                             <img src="images/illustration-1.svg" alt="illustration"/>
                         </ContentImg>
                     </Content>
-                </ContentWrapper>
-            </BackgroundWrapper>
+                </SignInContentWrapper>
+            </SignInBackgroundWrapper>
             <Footer/>
         </>
     );
