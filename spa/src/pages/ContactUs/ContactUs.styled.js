@@ -4,6 +4,7 @@ import {HiOutlineMail} from "react-icons/hi";
 import {FiPhone} from "react-icons/fi";
 import {colors} from "../../constants/Styles";
 import {Button} from "../../components/Button/Button.styled";
+import {Input} from "../../components/Input/Input.styled";
 
 export const ContactUsBackgroundWrapper = styled(BackgroundWrapper)`
   height: 95vh;
@@ -84,37 +85,23 @@ export const ContactUsFormWrapper = styled.div`
   border-radius: 30px;
   margin-top: 7.5vh;
   margin-right: 18vh;
-`;
-
-export const InputWrapper = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 7% 0 0 6%;
-`;
-
-export const Label = styled.h3`
-  margin: 15px 0 5px 10px !important;
-`;
-
-export const Input = styled.input`
-  width: 90%;
-  background-color: #FFF;
-  border-radius: 7px;
-  height: 40px;
-  border: 1px solid ${colors.COLOR_BORDER_LIGHT};
-  outline: none;
-  font-size: 15px;
-  font-weight: 400;
-  color: ${colors.TEXT_PRIMARY};
-  padding: 0 10px;
-
-
-  &:focus {
-    border: 1px solid ${colors.TEXT_PRIMARY};
-    background-color: #FFF;
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 7% 0 0 6%;
+    
+    h3 {
+      margin: 15px 0 5px 10px !important;
+      color: ${colors.TEXT_SECONDARY} !important;
+    }
   }
+`;
 
+export const ContactUsInput = styled(Input)`
+  width: 580px;
+  
 `;
 
 export const TextArea = styled.textarea`
@@ -123,7 +110,7 @@ export const TextArea = styled.textarea`
   border-radius: 7px;
   border: 1px solid ${colors.COLOR_BORDER_LIGHT};
   outline: none;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   color: ${colors.TEXT_PRIMARY};
   padding: 5px 10px;
@@ -134,13 +121,6 @@ export const TextArea = styled.textarea`
     background-color: #FFF;
   }
 
-`;
-
-export const ErrorMessage = styled.span`
-  margin: 0 10px;
-  color: #FD465B;
-  font-size: 14px !important;
-  font-weight: 400;
 `;
 
 export const SendMessageButton = styled(Button)`

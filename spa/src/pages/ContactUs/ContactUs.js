@@ -11,11 +11,14 @@ import {
     ContactUsFormWrapper,
     PhoneIcon,
     EmailIcon,
-    Input, TextArea, InputWrapper, SendMessageButton, ErrorMessage, Label,
+    TextArea,
+    SendMessageButton,
+    ContactUsInput,
 } from "./ContactUs.styled";
 import axios from "axios";
 import * as Yup from "yup";
 import {useFormik} from "formik";
+import {ErrorMessage} from "../../components/Input/Input.styled";
 
 function ContactUs() {
 
@@ -33,7 +36,7 @@ function ContactUs() {
                 .required("Email is required")
                 .email("Email is not valid"),
             message: Yup.string()
-                .required("Message field is required")
+                .required("Message is required")
                 .min(20, "Should have at least 20 characters")
                 .max(2000, "Should not be longer than 2000 characters"),
         }),
@@ -83,9 +86,9 @@ function ContactUs() {
                         </ContactUsInfo>
 
                         <ContactUsFormWrapper>
-                            <InputWrapper onSubmit={handleSubmit}>
-                                <Label htmlFor="name">Your Name</Label>
-                                <Input
+                            <form onSubmit={handleSubmit}>
+                                <label htmlFor="name"><h3>Your Name</h3></label>
+                                <ContactUsInput
                                     id="name"
                                     name="name"
                                     type="text"
@@ -95,8 +98,8 @@ function ContactUs() {
                                     <ErrorMessage>{errors.name}</ErrorMessage>
                                 ) : null}
 
-                                <Label htmlFor="email">Email Address</Label>
-                                <Input
+                                <label htmlFor="email"><h3>Email Address</h3></label>
+                                <ContactUsInput
                                     id="email"
                                     name="email"
                                     type="email"
@@ -106,7 +109,7 @@ function ContactUs() {
                                     <ErrorMessage>{errors.email}</ErrorMessage>
                                 ) : null}
 
-                                <Label htmlFor="message">Message</Label>
+                                <label htmlFor="message"><h3>Message</h3></label>
                                 <TextArea
                                     id="message"
                                     name="message"
@@ -118,25 +121,7 @@ function ContactUs() {
                                 ) : null}
 
                                 <SendMessageButton primary htmlType="submit">Send Message</SendMessageButton>
-                            </InputWrapper>
-
-                            {/*<Formik*/}
-                            {/*    initialValues={initialValues}*/}
-                            {/*    validationSchema={validationSchema}*/}
-                            {/*    onSubmit={handleClick}>*/}
-                            {/*    <InputWrapper>*/}
-                            {/*        <label>Your Name</label>*/}
-                            {/*        <ContactUsInput type="text" name="name" onChange={handleChange}  />*/}
-                            {/*        <ErrorMessage name="name" render={error => <h4>{error}</h4>} />*/}
-                            {/*        <label>Email address</label>*/}
-                            {/*        <ContactUsInput type="email" name="email" />*/}
-                            {/*        <ErrorMessage name="email" render={error => <h4>{error}</h4>} />*/}
-                            {/*        <label>Message</label>*/}
-                            {/*        <ContactUsTextArea type="text" name="message" rows={10} onChange={handleChange}/>*/}
-                            {/*        <ErrorMessage name="message" render={error => <h4>{error}</h4>} />*/}
-                            {/*        <SendMessageButton primary htmlType="submit">Send Message</SendMessageButton>*/}
-                            {/*    </InputWrapper>*/}
-                            {/*</Formik>*/}
+                            </form>
                         </ContactUsFormWrapper>
                     </ContactUsWrapper>
                 </ContactUsContentWrapper>
