@@ -1,6 +1,6 @@
 import React from "react";
 import {
-    Wrapper,
+    ToutItemWrapper,
     TourImg,
     TourDescription,
     DescriptionBottom,
@@ -10,7 +10,7 @@ import {Location} from "../../Discover/components/RecommendedTours.styled"
 
 function TourItem({src, name, numberOfReviews, numberOfStars, date, price}) {
     return (
-        <Wrapper>
+        <ToutItemWrapper>
             <TourImg>
                 <img src={src} alt="city"/>
             </TourImg>
@@ -33,7 +33,7 @@ function TourItem({src, name, numberOfReviews, numberOfStars, date, price}) {
                     </Location>
                 </DescriptionBottom>
             </TourDescription>
-        </Wrapper>
+        </ToutItemWrapper>
     );
 }
 

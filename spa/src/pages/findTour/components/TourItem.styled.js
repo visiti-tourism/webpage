@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const ToutItemWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 
