@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {colors} from "../../../constants/Styles";
 
-export const Wrapper = styled.div`
+export const FilterSectionWrapper = styled.div`
   background-color: ${colors.COLOR_WHITE};
   width: 450px;
   border-radius: 30px;

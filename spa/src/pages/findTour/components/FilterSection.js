@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Wrapper, FilterMobile, FilterDesktop} from "./FilterSection.styled.js";
+import {FilterSectionWrapper, FilterMobile, FilterDesktop} from "./FilterSection.styled.js";
 import {Location} from "../../Discover/components/RecommendedTours.styled";
 import FilterItems from "./FilterItems";
 
@@ -9,7 +9,7 @@ function FilterSection() {
 
     const handleClick = () => setClick(!click);
     return (
-        <Wrapper>
+        <FilterSectionWrapper>
             <FilterDesktop>
                 <Location style={{margin: "35px auto"}}>
                     <img src="images\icon-settings.svg" alt="Settings"/>
@@ -24,7 +24,7 @@ function FilterSection() {
                 </Location>
                 {click ? <FilterItems/> : null}
             </FilterMobile>
-        </Wrapper>
+        </FilterSectionWrapper>
     );
 }
 

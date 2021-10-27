@@ -1,7 +1,8 @@
 import styled from "styled-components"
-import {Link} from "react-router-dom";
 import {colors} from "../../constants/Styles";
 import {BackgroundWrapper, ContentWrapper} from "../../App.styled";
+import {Button} from "../../components/Button/Button.styled";
+import {Input} from "../../components/Input/Input.styled";
 
 export const SignInBackgroundWrapper = styled(BackgroundWrapper)`
   height: 95vh;
@@ -74,6 +75,11 @@ export const SignInInputs = styled.div`
   label {
     align-self: flex-start;
     padding-bottom: 5px;
+
+    h3 {
+      padding-top: 20px;
+      color: ${colors.TEXT_SECONDARY} !important;
+    }
   }
 
   hr {
@@ -86,7 +92,6 @@ export const SignInInputs = styled.div`
     text-align: center;
     height: 1.5em;
     opacity: .8;
-    margin: 3vh 0;
 
     &:before {
       content: '';
@@ -116,16 +121,14 @@ export const SignInInputs = styled.div`
     }
   }
 `;
-export const StyledInput = styled.input`
+
+export const SignInInput = styled(Input)`
   width: 363px;
-  height: 40px;
-  background-color: white;
-  border: 1px solid #E0E0E0;
-  border-radius: 5px;
-  margin-bottom: 30px;
+  
   @media screen and (max-width: 420px) {
     width: 80vw;
   }
+
 `;
 
 export const GoogleButton = styled.button`
@@ -139,6 +142,7 @@ export const GoogleButton = styled.button`
   background-color: white;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  margin-bottom: 20px;
 
   img {
     padding-right: 12px;
@@ -164,6 +168,7 @@ export const DontHaveAcc = styled.div`
   display: flex;
   justify-content: flex-start;
   align-self: flex-start;
+  margin-top: 15px;
 
   h5 {
     padding: 0 10px;
@@ -176,14 +181,10 @@ export const DontHaveAcc = styled.div`
   }
 `;
 
-export const LoginBtnLink = styled(Link)`
+export const SignInButton = styled(Button)`
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  margin: 3vh 0 5vh 0;
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
+  margin: 3vh 0 5vh 15vh;
 `;
