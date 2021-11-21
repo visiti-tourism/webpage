@@ -15,42 +15,25 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
-from excursions.views import (
-    ExcursionListView,
-    ExcursionDetailView,
-    ExcursionCreateView,
-    ExcursionApiView
-)
+import excursions
 from . import views
-from myapi import views as myapiviews
 from rest_framework.authtoken.views import obtain_auth_token
 from users import views as usersviews
 from django.conf.urls import url, include
 from rest_framework import routers
+from excursions.urls import router
 
 
-router = routers.DefaultRouter()
-#router.register(r'users', myapiviews.UserViewSet)
-#router.register(r'groups', myapiviews.GroupViewSet)
-
-# Wire up our API using automatic URL routing.
-# Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
     path('app/', views.app, name='app'),
     path('profile/', usersviews.profile, name='profile'),
-    path('', include(router.urls)),
+    path('rest/', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('accounts/', include('allauth.urls')),
-    path('excursions/', ExcursionListView.as_view(), name='excursions-list'),
-    path('excursion/<int:pk>/', ExcursionDetailView.as_view(), name='excursion-detail'),
-    path('excursion/new/', ExcursionCreateView.as_view(), name='excursion-create'),
-    path('api/excursions/', ExcursionApiView.excursion_list, name='excursions-api-list'),
+    path('api/', include('excursions.urls')),
     path('api-token-auth/', obtain_auth_token, name='api_token_auth'),
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.jwt')),
-    #path('api/excursion/(<int:pk>', ExcursionApiView)
 ]
