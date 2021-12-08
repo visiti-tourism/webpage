@@ -4,121 +4,123 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Add|Visiti</title>
-		<meta charset="UTF-8">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<head>
+    <title>Add|Visiti</title>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" media="all">
-		<link rel="stylesheet" type="text/css" href="/static/css/style.css">
-		<link rel="stylesheet" type="text/css" href="/static/css/media.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/media.css" media="all">
 
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic"
+          rel="stylesheet">
 
-		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-	</head>
-	<body>
-		<picture><img src="/static/images/AddImage.png" style="object-fit: cover; width: 100%; position: absolute;"></picture>
-		<!--NAVIGATION MENU-->
+</head>
+<body>
+<picture><img src="/static/images/AddImage.png" style="object-fit: cover; width: 100%; position: absolute;"></picture>
+<!--NAVIGATION MENU-->
 
-		<div class="container-fluid">
-			<div class="row">
-					<nav class="page-navigation">
-						<div class="col-sm-2">
-							<h1 style="color: orange; margin-top: 26px; margin-left: 50px;">VisitiLOGO</h1>
-						</div>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="page-navigation">
+            <div class="col-sm-2">
+                <h1 style="color: orange; margin-top: 26px; margin-left: 50px;">VisitiLOGO</h1>
+            </div>
 
-						<div class="col-sm-10">
-							<div class="row">
-								<div class="col-sm-3"></div>
-								<div class="col-sm-2">
-									<a href="/">Home</a>
-								</div>
+            <div class="col-sm-10">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-2">
+                        <a href="/">Home</a>
+                    </div>
 
-								<div class="col-sm-2">
-									<a href="{% url 'excursion-create' %}" class="active_page">Add Tour</a>
-								</div>
-
-
-								<div class="col-sm-2">
-									<a href="/#app">App</a>
-								</div>
-
-								<div class="col-sm-3">
-									<form action="/accounts/login">
-                                        {% csrf_token %}
-										<button class="button_signin" href="/accounts/login">Log in</button>
-									</form>
-								</div>
-
-							</div>
-						</div>
-					</nav>
-				</div>
-			</div>
-
-		<!--MAIN PART-->
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-5"></div>
-				<div class="col-sm-2">
-					<div class="box">
-						<h class="main_title_add_tour">Add new tour</h>
-					</div>
-				</div>
-				<div class="col-sm-5"></div>
-		</div>
-		<div class="row">
-			<div class="col-sm-2"></div>
-			<div class="col-sm-8">
-
-				<div class="main_box">
-
-					<form name="test" method="POST" class="box_to_the_inputs">
-                        {% csrf_token %}
-
-						<h2 class="description_to_the_inputs">Name of the guided tour</h2>
-						{% render_field form.name class+="inputs" %}
-                        <!--<input type="text" name="name" class="inputs">-->
+                    <div class="col-sm-2">
+                        <a href="{% url 'excursion-create' %}" class="active_page">Add Tour</a>
+                    </div>
 
 
-						<h2 class="description_to_the_inputs">The number of free places</h2>
-						{% render_field form.places class+="inputs" %}
+                    <div class="col-sm-2">
+                        <a href="/#app">App</a>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <form action="/accounts/login">
+                            {% csrf_token %}
+                            <button class="button_signin" href="/accounts/login">Log in</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!--MAIN PART-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-5"></div>
+        <div class="col-sm-2">
+            <div class="box">
+                <h class="main_title_add_tour">Add new tour</h>
+            </div>
+        </div>
+        <div class="col-sm-5"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+
+            <div class="main_box">
+
+                <form name="test" method="POST" class="box_to_the_inputs">
+                    {% csrf_token %}
+
+                    <h2 class="description_to_the_inputs">Name of the guided tour</h2>
+                    {% render_field form.name class+="inputs" %}
+                    <!--<input type="text" name="name" class="Input">-->
 
 
-						<h2 class="description_to_the_inputs">Price in $ for one person</h2>
-						{% render_field form.price class+="inputs" %}
+                    <h2 class="description_to_the_inputs">The number of free places</h2>
+                    {% render_field form.places class+="inputs" %}
 
 
-						<h2 class="description_to_the_inputs">The duration of the tour in hours</h2>
-						{% render_field form.duration class+="inputs" %}
+                    <h2 class="description_to_the_inputs">Price in $ for one person</h2>
+                    {% render_field form.price class+="inputs" %}
 
 
-						<h2 class="description_to_the_inputs">The description of the tour you're offering<br>This will be the main criteria for users while choosing the tour</h2>
-						{% render_field form.comment class+="inputs" %}
+                    <h2 class="description_to_the_inputs">The duration of the tour in hours</h2>
+                    {% render_field form.duration class+="inputs" %}
 
 
-                        <button type="submit" class="button_submit_add_tour">Submit</button>
-						<h3 class="text_under_button">You will be able to edit this information</h3>
-					</form>
-				</div>
-			</div>
-			<div class="col-sm-2"></div>
-		</div>
-	</div>
-	</body>
-	    <script>
-  $(document).ready(function(){
-    $("a[href*=#]").on("click", function(e){
-        var anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top
-        }, 777);
-        e.preventDefault();
-        return false;
+                    <h2 class="description_to_the_inputs">The description of the tour you're offering<br>This will be
+                        the main criteria for users while choosing the tour</h2>
+                    {% render_field form.comment class+="inputs" %}
+
+
+                    <button type="submit" class="button_submit_add_tour">Submit</button>
+                    <h3 class="text_under_button">You will be able to edit this information</h3>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+        $("a[href*=#]").on("click", function (e) {
+            var anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top
+            }, 777);
+            e.preventDefault();
+            return false;
+        });
     });
-});
 </script>
 </html>
 

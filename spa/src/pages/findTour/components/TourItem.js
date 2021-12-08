@@ -27,11 +27,13 @@ function TourItem({src, name, numberOfReviews, numberOfStars, date, price}) {
                         <img src="images\icon-location.svg" alt="location"/>
                         <h5>{date}</h5>
                     </Location>
+
                     <Location>
                         <img src="images\icon-wallet.svg" alt="wallet"/>
                         <h3 style={{fontWeight: 500, paddingTop:"15%"}}>From {price} €</h3>
                     </Location>
                 </DescriptionBottom>
+
             </TourDescription>
         </ToutItemWrapper>
     );

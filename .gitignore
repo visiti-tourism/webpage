@@ -113,3 +113,12 @@ migrations/*
 # File with settings
 website/settings.py
 
+# Config files
+config
+confiug/*
+
+conf.json
+settings.conf
+
+
+
