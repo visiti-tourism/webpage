@@ -16,6 +16,7 @@ import {
     Application,
 } from "react-rainbow-components";
 import {theme} from "../../../constants/Styles";
+import axios from "axios";
 
 function TourList() {
     const [selectedLocation, setSelectedLocation] = React.useState({});
@@ -24,6 +25,16 @@ function TourList() {
         setSelectedLocation(location);
     }
 
+    const [excursions, setExcursions] = useState([]);
+
+    useEffect(() => {
+        axios.get('http://127.0.0.1:8000/api/excursions')
+            .then(response => setExcursions(response.data.excursions))
+            .catch(error => console.log(error.message))
+
+    }, []);
+
+    console.log(excursions);
     return (
         <>
             <ListContainer>
@@ -62,16 +73,16 @@ function TourList() {
                     </Application>
                 </SearchBar>
                 <ToursWrapper>
-                    {allTours.map(
-                        ({id, src, name, numberOfReviews, numberOfStars, date, price}) => (
+                    {excursions.map(
+                        ({id, name, price, date, src, numberOfReviews,location}) => (
                             <TourItem
                                 key={id}
-                                src={src}
                                 name={name}
-                                numberOfReviews={numberOfReviews}
-                                numberOfStars={numberOfStars}
-                                date={date}
                                 price={price}
+                                date={date}
+                                src={src}
+                                numberOfReviews={numberOfReviews}
+                                location={location}
                             />
                         )
                     )}

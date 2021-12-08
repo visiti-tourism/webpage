@@ -8,7 +8,7 @@ import {
 } from "./TourItem.styled";
 import {Location} from "../../Discover/components/RecommendedTours.styled"
 
-function TourItem({src, name, numberOfReviews, numberOfStars, date, price}) {
+function TourItem({id, name, price, date, src, numberOfReviews, location}) {
     return (
         <ToutItemWrapper>
             <TourImg>
@@ -25,15 +25,18 @@ function TourItem({src, name, numberOfReviews, numberOfStars, date, price}) {
                 <DescriptionBottom>
                     <Location>
                         <img src="images\icon-location.svg" alt="location"/>
-                        <h5>{date}</h5>
+                        <h5>{location}</h5>
                     </Location>
 
                     <Location>
                         <img src="images\icon-wallet.svg" alt="wallet"/>
-                        <h3 style={{fontWeight: 500, paddingTop:"15%"}}>From {price} €</h3>
+                        <h3 style={{fontWeight: 500, paddingTop: "15%"}}>From {price} €</h3>
                     </Location>
                 </DescriptionBottom>
-
+                <Location>
+                    <img src="images\icon-clock.svg" alt="clock"/>
+                    <h5>{date}</h5>
+                </Location>
             </TourDescription>
         </ToutItemWrapper>
     );
