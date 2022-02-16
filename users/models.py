@@ -16,7 +16,7 @@ class User(models.Model):
     username = models.CharField(max_length=100, default="username")
     name = models.CharField(max_length=100)
     surname = models.CharField(max_length=100)
-    email = models.EmailField()
+    email = models.EmailField(unique=True)
     password = models.CharField(max_length=128)
     city = models.ForeignKey(City, on_delete=models.CASCADE,default="city")
     country = models.ForeignKey(Country, on_delete=models.CASCADE, default= "country")
