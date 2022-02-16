@@ -9,6 +9,7 @@ class CountrySerializer(serializers.ModelSerializer):
 
 class ExcursionSerializer(serializers.ModelSerializer):
     location = serializers.SerializerMethodField('get_location')
+    city = serializers.SerializerMethodField('get_city')
     class Meta:
         model = Excursion
         fields = ('id',
@@ -16,7 +17,7 @@ class ExcursionSerializer(serializers.ModelSerializer):
                   'numberOfReviews',
                   'price',
                   'date',
-                  'src',
+                  'imageSrc',
                   'numberOfStars',
                   'city',
                   'location')
@@ -25,6 +26,10 @@ class ExcursionSerializer(serializers.ModelSerializer):
         city = obj.city
         country = city.country
         return str(country.name) + ', ' + str(city.name)
+    def get_city(self,obj):
+        city = obj.city
+        self.name = city.name
+        return self.name
 
 
 
@@ -37,7 +42,7 @@ class ExcursionDetailSerializer(serializers.ModelSerializer):
                   'numberOfReviews',
                   'price',
                   'date',
-                  'src',
+                  'imageSrc',
                   'numberOfStars',
                   'description',
                   'location')

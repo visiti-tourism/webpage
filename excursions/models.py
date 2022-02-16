@@ -21,13 +21,12 @@ class City(models.Model):
 class Excursion(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField(max_length=1000, null=True)
-    price = models.CharField(max_length=5)
+    price = models.IntegerField(max_length=5,null=True)
     numberOfStars = models.IntegerField(max_length=5,null=True)
     numberOfReviews = models.IntegerField(max_length=5,null=True)
     city = models.ForeignKey(City, on_delete=models.SET_NULL,null=True)
     date = models.DateTimeField(auto_now=False, auto_now_add=False, default=datetime.now)
-    src = models.ImageField(upload_to="static/images/excursions/", default=None,null=True)
-    country = models.CharField(max_length=40,null=True,blank=True)
+    imageSrc = models.ImageField(upload_to="static/images/excursions/", default=None,null=True)
 
     def __str__(self):
         return self.name
